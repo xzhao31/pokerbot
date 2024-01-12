@@ -7,6 +7,7 @@ from skeleton.states import NUM_ROUNDS, STARTING_STACK, BIG_BLIND, SMALL_BLIND
 from skeleton.bot import Bot
 from skeleton.runner import parse_args, run_bot
 import random
+import eval7
 
 
 class Player(Bot):
@@ -24,7 +25,12 @@ class Player(Bot):
         Returns:
         Nothing.
         """
-        pass
+        # debugging
+        self.round = 0
+        self.folds = 0
+
+        # opp stats
+
 
     def handle_new_round(self, game_state, round_state, active):
         """
@@ -43,7 +49,8 @@ class Player(Bot):
         # round_num = game_state.round_num  # the round number from 1 to NUM_ROUNDS
         # my_cards = round_state.hands[active]  # your cards
         # big_blind = bool(active)  # True if you are the big blind
-        pass
+        print(f'---round {self.round}---')
+        self.round += 1
 
     def handle_round_over(self, game_state, terminal_state, active):
         """
@@ -62,7 +69,59 @@ class Player(Bot):
         # street = previous_state.street  # 0, 3, 4, or 5 representing when this round ended
         # my_cards = previous_state.hands[active]  # your cards
         # opp_cards = previous_state.hands[1-active]  # opponent's cards or [] if not revealed
-        pass
+        if self.round >100:
+            print(f'{self.folds=}')
+
+    
+    def preflop_estimate(self, hand, iters):
+        """
+        hand (list): two cards
+        iters (int): number of monte carlo iterations
+        """
+        deck = eval7.Deck()
+        my_cards = [eval7.Card(card) for card in hand]
+        for card in my_cards:
+            deck.cards.remove(card)
+        val2,val3 = 0,0
+        opp2,opp3 = 0,0
+
+        for i in range(iters):
+            deck.shuffle()
+            board_cards = deck[:5]
+            auction_card = deck[5]
+            opp_cards = deck[6:8]
+            val2 += eval7.evaluate(my_cards+board_cards)
+            val3 += eval7.evaluate(my_cards+board_cards+[auction_card])
+            opp2 += eval7.evaluate(opp_cards+board_cards)
+            opp3 += eval7.evaluate(opp_cards+board_cards+[auction_card])
+
+        return val2/iters, val3/iters, opp2/iters, opp3/iters
+
+
+    def round_estimate(self,hand,opp,board,iters):
+        """
+        hand (list): your cards (length 2 or 3)
+        opp (int): number of cards your opponnet has (2 or 3)
+        iters (int): number of monte carlo iterations
+        """
+        deck = eval7.Deck()
+        my_cards = [eval7.Card(card) for card in hand]
+        board_cards = [eval7.Card(card) for card in board]
+        for card in my_cards+board_cards:
+            deck.cards.remove(card)
+        my_val = 0
+        opp_val = 0
+
+        for i in range(iters):
+            deck.shuffle()
+            unflipped = 5-len(board)
+            board_cards += deck[:unflipped]
+            opp_cards = deck[unflipped:unflipped+2] if opp==2 else deck[unflipped:unflipped+3]
+            my_val += eval7.evaluate(my_cards+board_cards)
+            opp_val += eval7.evaluate(opp_cards+board_cards)
+
+        return my_val/iters, opp_val/iters
+    
 
     def get_action(self, game_state, round_state, active):
         """
@@ -91,25 +150,53 @@ class Player(Bot):
         continue_cost = (opp_pip - my_pip)  # the number of chips needed to stay in the pot
         my_contribution = STARTING_STACK - my_stack  # the number of chips you have contributed to the pot
         opp_contribution = STARTING_STACK - opp_stack  # the number of chips your opponent has contributed to the pot
+        effective_stack = min(my_stack, opp_stack)
 
         if RaiseAction in legal_actions:
-            (
-                min_raise,
-                max_raise,
-            ) = (
-                round_state.raise_bounds()
-            )  # the smallest and largest numbers of chips for a legal bet/raise
+            min_raise, max_raise = round_state.raise_bounds() # the smallest and largest numbers of chips for a legal bet/raise
             min_cost = min_raise - my_pip  # the cost of a minimum bet/raise
             max_cost = max_raise - my_pip  # the cost of a maximum bet/raise
+        
+        # preflop
+        if street == 0:
+            # print("---preflop---")
+            # print(f'{round_state=}')
+            # print(f"{legal_actions=}")
+            val2, val3, opp2, opp3 = self.preflop_estimate(my_cards, 100)
+            if val2-opp2 >100 or val3-opp3 > 100:
+                if RaiseAction in legal_actions:
+                    return RaiseAction(random.randint(min_raise,max_raise))
+                return CallAction()
+            else:
+                self.folds += 1
+                return FoldAction()
 
-        if RaiseAction in legal_actions and random.random() < 0.3:
-            return RaiseAction(random.randint(min_raise, max_raise))
+        # auction or right after
+        elif street==3 and BidAction in legal_actions:
+            # print("---auction---")
+            val2, val3, opp2, opp3 = self.preflop_estimate(my_cards, 100)
+            auction_val = int(val3-val2)
+            auction_val = min(auction_val,effective_stack+1)
+            auction_val = max(auction_val,0)
+            # print(f'{auction_val=}')
+            return BidAction(auction_val)
+
+        # normal round
+        opp = 2 if my_bid > opp_bid else 3
+        my_val, opp_val = self.round_estimate(my_cards,opp,board_cards,100)
+        if my_val < opp_val-my_contribution:
+            return FoldAction()
+        print("---normal round---")
+        print(f"{round_state=}")
+        if RaiseAction in legal_actions and random.random()<0.3:
+            raise_amt = 0.7*int(my_val-opp_val)
+            raise_amt = min(raise_amt,max_raise)
+            return RaiseAction(random.randint(min_raise,raise_amt))
         if CheckAction in legal_actions:
             return CheckAction()
-        elif BidAction in legal_actions:
-            return BidAction(my_stack)  # random bid between 0 and our stack
         return CallAction()
 
 
 if __name__ == "__main__":
     run_bot(Player(), parse_args())
+    print("fuck you")
