@@ -26,11 +26,12 @@ class Player(Bot):
         Nothing.
         """
         # debugging
-        self.round = 0
         self.folds = 0
         self.preflops = 0
 
         # opp stats
+        self.opp_folds = 0
+        self.opp_preflops = 0
 
 
     def handle_new_round(self, game_state, round_state, active):
@@ -49,10 +50,10 @@ class Player(Bot):
         # game_clock = game_state.game_clock  # the total number of seconds your bot has left to play this game
         # round_num = game_state.round_num  # the round number from 1 to NUM_ROUNDS
         # my_cards = round_state.hands[active]  # your cards
-        # big_blind = bool(active)  # True if you are the big blind
-        pass
-        print(f'---round {self.round}---')
-        self.round += 1
+        self.big_blind = bool(active)  # True if you are the big blind
+        print(f'---round {game_state.round_num}---')
+        self.folded = False
+
 
     def handle_round_over(self, game_state, terminal_state, active):
         """
@@ -67,13 +68,19 @@ class Player(Bot):
         Nothing.
         """
         # my_delta = terminal_state.deltas[active]  # your bankroll change from this round
-        # previous_state = terminal_state.previous_state  # RoundState before payoffs
+        previous_state = terminal_state.previous_state  # RoundState before payoffs
         # street = previous_state.street  # 0, 3, 4, or 5 representing when this round ended
         # my_cards = previous_state.hands[active]  # your cards
-        # opp_cards = previous_state.hands[1-active]  # opponent's cards or [] if not revealed
+        opp_cards = previous_state.hands[1-active]  # opponent's cards or [] if not revealed
         pass
-        if self.round > 100:
+        if game_state.round_num > 100:
             print(f'proportion preflop folds: {self.folds/self.preflops}')
+        if previous_state.street==0 and (self.big_blind or (not self.big_blind and not self.folded)):
+            self.opp_preflops += 1
+            if not opp_cards and not self.folded:
+                self.opp_folds += 1
+                print("opp folded")
+                print(f'{previous_state=}')
 
     
     def preflop_estimate(self, hand, iters):
@@ -85,20 +92,46 @@ class Player(Bot):
         my_cards = [eval7.Card(card) for card in hand]
         for card in my_cards:
             deck.cards.remove(card)
-        val2,val3 = 0,0
-        opp2,opp3 = 0,0
+        wins = 0
 
         for i in range(iters):
             deck.shuffle()
             board_cards = deck[:5]
-            auction_card = deck[5]
-            opp_cards = deck[6:8]
-            val2 += eval7.evaluate(my_cards+board_cards)
-            val3 += eval7.evaluate(my_cards+board_cards+[auction_card])
-            opp2 += eval7.evaluate(opp_cards+board_cards)
-            opp3 += eval7.evaluate(opp_cards+board_cards+[auction_card])
+            opp_cards = deck[5:7]
+            if eval7.evaluate(my_cards+board_cards) > eval7.evaluate(opp_cards+board_cards):
+                wins += 1
 
-        return val2/iters, val3/iters, opp2/iters, opp3/iters
+        return wins/iters
+    
+    def auction_estimate(self, hand, flop, iters):
+        """
+        hand (list): your cards (length 2)
+        flop (list): cards on the board (length 3)
+        iters (int): number of monte carlo iterations
+        """
+        deck = eval7.Deck()
+        my_cards = [eval7.Card(card) for card in hand]
+        flop_cards = [eval7.Card(card) for card in flop]
+        for card in my_cards+flop_cards:
+            deck.cards.remove(card)
+        wins3,wins2 = 0,0
+
+        for i in range(iters):
+            deck.shuffle()
+            unflipped_cards = deck[0:2]
+            auction = deck[2]
+            opp_cards = deck[3:5]
+            val2 = eval7.evaluate(my_cards+flop_cards+unflipped_cards)
+            val3 = eval7.evaluate(my_cards+flop_cards+unflipped_cards+[auction])
+            opp2 = eval7.evaluate(opp_cards+flop_cards+unflipped_cards)
+            opp3 = eval7.evaluate(opp_cards+flop_cards+unflipped_cards+[auction])
+            if val3 > opp2: # we win auction
+                wins3 += 1
+            if val2 > opp3: # we lose auction
+                wins2 += 1
+        return wins3/iters, wins2/iters
+
+
 
 
     def round_estimate(self, hand, opp, board, iters):
@@ -159,7 +192,6 @@ class Player(Bot):
         continue_cost = (opp_pip - my_pip)  # the number of chips needed to stay in the pot
         my_contribution = STARTING_STACK - my_stack  # the number of chips you have contributed to the pot
         opp_contribution = STARTING_STACK - opp_stack  # the number of chips your opponent has contributed to the pot
-        effective_stack = min(my_stack, opp_stack)
 
         if RaiseAction in legal_actions:
             min_raise, max_raise = round_state.raise_bounds() # the smallest and largest numbers of chips for a legal bet/raise
@@ -170,21 +202,33 @@ class Player(Bot):
         if street == 0:
             # print("---preflop---")
             self.preflops += 1
-            val2, val3, opp2, opp3 = self.preflop_estimate(my_cards, 100)
-            if val2-opp2 >200 or val3-opp3 > 300:
+            wins = self.preflop_estimate(my_cards, 100)
+            cutoff = 0.6
+            if game_state.round_num > 100:
+                print(f'opp fold rate is {self.opp_folds/self.opp_preflops}')
+            # if self.round > 100:
+            #     cutoff = self.opp_folds/self.round - 0.07
+            if wins > cutoff:
                 if RaiseAction in legal_actions:
-                    return RaiseAction(random.randint(min_raise,(min_raise+max_raise)//2))
+                    return RaiseAction(random.randint(min_raise,min_raise+int(wins*(max_raise-min_raise))))
                 return CallAction()
             else:
                 self.folds += 1
-                print("folded")
+                self.folded = True
                 return FoldAction()
+            # if self.round<100 and (val2-opp2 >200 or val3-opp3 > 300):
+            #     if RaiseAction in legal_actions:
+            #         return RaiseAction(random.randint(min_raise,(min_raise+max_raise)//2))
+            #     return CallAction()
+            # elif self.opp_folds/self.round > 0.6 and (val2-opp2 >200 or val3-opp3 > 300):
 
         # auction or right after
         elif BidAction in legal_actions:
             # print("---auction---")
-            val2, val3, opp2, opp3 = self.preflop_estimate(my_cards, 100)
-            auction_val = int(val3-val2)
+            # val2, val3, opp2, opp3 = self.preflop_estimate(my_cards, 100)
+            # auction_val = int(val3-val2)
+            wins3,wins2 = self.auction_estimate(my_cards, board_cards, 100)
+            auction_val = int(750*(wins3-wins2))
             if my_stack > opp_stack:
                 auction_val = min(auction_val, opp_stack+1)
             else:
@@ -201,7 +245,10 @@ class Player(Bot):
         if RaiseAction in legal_actions and random.random()<0.3:
             raise_amt = int((p_win-p_lose)*my_contribution)
             raise_amt = min(raise_amt,max_raise)
-            return RaiseAction(random.randint(min_raise,raise_amt))
+            if raise_amt < min_raise+1:
+                return RaiseAction(min_raise)
+            else:
+                return RaiseAction(random.randint(min_raise,raise_amt))
         if CheckAction in legal_actions:
             return CheckAction()
         return CallAction()
