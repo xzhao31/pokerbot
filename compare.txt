@@ -1,6 +1,5 @@
 ---round 1---
 preflop
-folded
 ---round 2---
 ---round 3---
 preflop
@@ -13,7 +12,6 @@ preflop
 ---round 8---
 ---round 9---
 preflop
-folded
 ---round 10---
 ---round 11---
 preflop
@@ -23,7 +21,7 @@ preflop
 ---round 14---
 ---round 15---
 preflop
-preflop
+folded
 ---round 16---
 ---round 17---
 preflop
@@ -33,33 +31,27 @@ preflop
 ---round 20---
 ---round 21---
 preflop
-folded
 ---round 22---
 preflop
 folded
 ---round 23---
 preflop
-folded
 ---round 24---
 ---round 25---
 preflop
 folded
 ---round 26---
-preflop
-folded
 ---round 27---
 preflop
+folded
 ---round 28---
 ---round 29---
 preflop
-folded
 ---round 30---
 ---round 31---
 preflop
 folded
 ---round 32---
-preflop
-folded
 ---round 33---
 preflop
 folded
@@ -69,11 +61,13 @@ preflop
 ---round 36---
 ---round 37---
 preflop
-folded
 ---round 38---
 ---round 39---
 preflop
+folded
 ---round 40---
+preflop
+folded
 ---round 41---
 preflop
 ---round 42---
@@ -90,6 +84,7 @@ preflop
 ---round 48---
 ---round 49---
 preflop
+folded
 ---round 50---
 ---round 51---
 preflop
@@ -97,22 +92,22 @@ folded
 ---round 52---
 ---round 53---
 preflop
----round 54---
-preflop
 folded
+---round 54---
 ---round 55---
-preflop
 preflop
 ---round 56---
 ---round 57---
 preflop
+preflop
+folded
 ---round 58---
 ---round 59---
-preflop
 preflop
 ---round 60---
 ---round 61---
 preflop
+folded
 ---round 62---
 ---round 63---
 preflop
@@ -120,60 +115,78 @@ folded
 ---round 64---
 ---round 65---
 preflop
+preflop
+preflop
 ---round 66---
 ---round 67---
 preflop
-folded
+preflop
+preflop
 ---round 68---
 ---round 69---
 preflop
 folded
 ---round 70---
+preflop
+folded
 ---round 71---
 preflop
 ---round 72---
+preflop
+folded
 ---round 73---
 preflop
+folded
 ---round 74---
+preflop
+folded
 ---round 75---
+preflop
+preflop
 preflop
 ---round 76---
 ---round 77---
 preflop
+folded
 ---round 78---
 ---round 79---
 preflop
 folded
 ---round 80---
----round 81---
 preflop
 folded
+---round 81---
+preflop
 ---round 82---
 ---round 83---
 preflop
+folded
 ---round 84---
 ---round 85---
 preflop
 folded
 ---round 86---
+preflop
+preflop
+folded
 ---round 87---
 preflop
 ---round 88---
 ---round 89---
 preflop
-folded
 ---round 90---
 ---round 91---
 preflop
+preflop
+folded
 ---round 92---
 ---round 93---
 preflop
 folded
 ---round 94---
-preflop
-preflop
 ---round 95---
 preflop
+folded
 ---round 96---
 ---round 97---
 preflop
@@ -181,2626 +194,2525 @@ folded
 ---round 98---
 ---round 99---
 preflop
-folded
 ---round 100---
 ---round 101---
 preflop
 folded
-preflop folds: 0.45
 ---round 102---
-preflop folds: 0.45
 ---round 103---
 preflop
-folded
-preflop folds: 0.45901639344262296
 ---round 104---
-preflop folds: 0.45901639344262296
 ---round 105---
 preflop
 folded
-preflop folds: 0.46774193548387094
 ---round 106---
-preflop
-preflop folds: 0.4603174603174603
 ---round 107---
 preflop
 folded
-preflop folds: 0.46875
 ---round 108---
-preflop folds: 0.46875
 ---round 109---
 preflop
-preflop folds: 0.46153846153846156
 ---round 110---
-preflop folds: 0.46153846153846156
 ---round 111---
 preflop
-folded
-preflop folds: 0.4696969696969697
 ---round 112---
-preflop folds: 0.4696969696969697
 ---round 113---
 preflop
-preflop folds: 0.4626865671641791
+folded
 ---round 114---
-preflop folds: 0.4626865671641791
 ---round 115---
 preflop
-folded
-preflop folds: 0.47058823529411764
 ---round 116---
-preflop folds: 0.47058823529411764
 ---round 117---
 preflop
-preflop folds: 0.463768115942029
 ---round 118---
-preflop
-folded
-preflop folds: 0.4714285714285714
 ---round 119---
 preflop
-preflop folds: 0.4647887323943662
 ---round 120---
-preflop folds: 0.4647887323943662
 ---round 121---
 preflop
-preflop folds: 0.4583333333333333
+folded
 ---round 122---
-preflop folds: 0.4583333333333333
+preflop
+folded
 ---round 123---
 preflop
-preflop folds: 0.4520547945205479
+preflop
+folded
 ---round 124---
-preflop folds: 0.4520547945205479
+preflop
+preflop
 ---round 125---
 preflop
-preflop folds: 0.44594594594594594
 ---round 126---
-preflop folds: 0.44594594594594594
 ---round 127---
 preflop
-preflop folds: 0.44
+folded
 ---round 128---
-preflop folds: 0.44
 ---round 129---
 preflop
 folded
-preflop folds: 0.4473684210526316
 ---round 130---
-preflop folds: 0.4473684210526316
 ---round 131---
 preflop
 folded
-preflop folds: 0.45454545454545453
 ---round 132---
-preflop folds: 0.45454545454545453
 ---round 133---
 preflop
 preflop
-preflop folds: 0.4430379746835443
 ---round 134---
-preflop folds: 0.4430379746835443
 ---round 135---
 preflop
-preflop folds: 0.4375
+preflop
 ---round 136---
-preflop folds: 0.4375
+preflop
+preflop
 ---round 137---
 preflop
 folded
-preflop folds: 0.4444444444444444
 ---round 138---
-preflop folds: 0.4444444444444444
+preflop
+preflop
 ---round 139---
 preflop
-preflop folds: 0.43902439024390244
+folded
 ---round 140---
-preflop folds: 0.43902439024390244
+preflop
+folded
 ---round 141---
 preflop
 folded
-preflop folds: 0.4457831325301205
 ---round 142---
-preflop folds: 0.4457831325301205
 ---round 143---
 preflop
 folded
-preflop folds: 0.4523809523809524
 ---round 144---
-preflop folds: 0.4523809523809524
 ---round 145---
 preflop
 folded
-preflop folds: 0.4588235294117647
 ---round 146---
-preflop folds: 0.4588235294117647
+preflop
+folded
 ---round 147---
 preflop
-preflop folds: 0.45348837209302323
----round 148---
-preflop
 folded
-preflop folds: 0.45977011494252873
+---round 148---
 ---round 149---
 preflop
-preflop folds: 0.45454545454545453
+folded
 ---round 150---
-preflop folds: 0.45454545454545453
 ---round 151---
 preflop
-folded
-preflop folds: 0.4606741573033708
 ---round 152---
-preflop folds: 0.4606741573033708
 ---round 153---
 preflop
-folded
-preflop folds: 0.4666666666666667
 ---round 154---
-preflop folds: 0.4666666666666667
 ---round 155---
 preflop
-preflop folds: 0.46153846153846156
 ---round 156---
-preflop folds: 0.46153846153846156
 ---round 157---
 preflop
-folded
-preflop folds: 0.4673913043478261
 ---round 158---
-preflop folds: 0.4673913043478261
 ---round 159---
 preflop
-folded
-preflop folds: 0.4731182795698925
 ---round 160---
-preflop folds: 0.4731182795698925
 ---round 161---
 preflop
-folded
-preflop folds: 0.4787234042553192
 ---round 162---
-preflop
-preflop
-preflop folds: 0.46875
 ---round 163---
 preflop
-preflop folds: 0.4639175257731959
 ---round 164---
 preflop
-preflop folds: 0.45918367346938777
+folded
 ---round 165---
 preflop
 folded
-preflop folds: 0.46464646464646464
 ---round 166---
-preflop
-folded
-preflop folds: 0.47
 ---round 167---
 preflop
-preflop folds: 0.46534653465346537
 ---round 168---
-preflop folds: 0.46534653465346537
 ---round 169---
 preflop
-preflop
 folded
-preflop folds: 0.46601941747572817
 ---round 170---
-preflop
-preflop
-preflop folds: 0.45714285714285713
 ---round 171---
 preflop
-preflop folds: 0.4528301886792453
+preflop
 ---round 172---
-preflop folds: 0.4528301886792453
+preflop
+preflop
 ---round 173---
 preflop
 folded
-preflop folds: 0.45794392523364486
 ---round 174---
-preflop folds: 0.45794392523364486
 ---round 175---
 preflop
-preflop folds: 0.4537037037037037
+folded
 ---round 176---
-preflop
-preflop
-preflop folds: 0.44545454545454544
 ---round 177---
 preflop
-preflop folds: 0.44144144144144143
+folded
 ---round 178---
-preflop folds: 0.44144144144144143
+preflop
+folded
 ---round 179---
 preflop
-preflop
-preflop folds: 0.4336283185840708
 ---round 180---
-preflop folds: 0.4336283185840708
+preflop
+folded
 ---round 181---
 preflop
-preflop folds: 0.4298245614035088
+folded
 ---round 182---
-preflop folds: 0.4298245614035088
 ---round 183---
 preflop
-preflop folds: 0.4260869565217391
 ---round 184---
-preflop folds: 0.4260869565217391
+preflop
+preflop
 ---round 185---
 preflop
-folded
-preflop folds: 0.43103448275862066
 ---round 186---
-preflop
-preflop
-preflop folds: 0.423728813559322
 ---round 187---
 preflop
-preflop folds: 0.42016806722689076
 ---round 188---
-preflop
-preflop folds: 0.4166666666666667
 ---round 189---
 preflop
-folded
-preflop folds: 0.4214876033057851
+preflop
 ---round 190---
-preflop folds: 0.4214876033057851
 ---round 191---
 preflop
-preflop
 folded
-preflop folds: 0.42276422764227645
 ---round 192---
-preflop folds: 0.42276422764227645
 ---round 193---
 preflop
-folded
-preflop folds: 0.4274193548387097
 ---round 194---
-preflop folds: 0.4274193548387097
 ---round 195---
 preflop
-preflop folds: 0.424
 ---round 196---
-preflop folds: 0.424
 ---round 197---
 preflop
-preflop folds: 0.42063492063492064
 ---round 198---
-preflop
-preflop
-folded
-preflop folds: 0.421875
 ---round 199---
 preflop
-preflop folds: 0.4186046511627907
+folded
 ---round 200---
-preflop folds: 0.4186046511627907
+preflop
+folded
 ---round 201---
 preflop
 folded
-preflop folds: 0.4230769230769231
+preflop folds: 0.45323741007194246
 ---round 202---
-preflop folds: 0.4230769230769231
+preflop folds: 0.45323741007194246
 ---round 203---
 preflop
-preflop folds: 0.4198473282442748
+preflop folds: 0.45
 ---round 204---
-preflop folds: 0.4198473282442748
+preflop folds: 0.45
 ---round 205---
 preflop
-preflop folds: 0.4166666666666667
----round 206---
-preflop folds: 0.4166666666666667
----round 207---
-preflop
-preflop folds: 0.41353383458646614
----round 208---
-preflop folds: 0.41353383458646614
----round 209---
 preflop
 folded
-preflop folds: 0.417910447761194
+preflop folds: 0.4507042253521127
+---round 206---
+preflop folds: 0.4507042253521127
+---round 207---
+preflop
+preflop folds: 0.44755244755244755
+---round 208---
+preflop folds: 0.44755244755244755
+---round 209---
+preflop
+preflop folds: 0.4444444444444444
 ---round 210---
-preflop folds: 0.417910447761194
+preflop folds: 0.4444444444444444
 ---round 211---
 preflop
-preflop folds: 0.4148148148148148
+preflop folds: 0.4413793103448276
 ---round 212---
-preflop folds: 0.4148148148148148
+preflop folds: 0.4413793103448276
 ---round 213---
 preflop
 folded
-preflop folds: 0.41911764705882354
+preflop folds: 0.4452054794520548
 ---round 214---
-preflop folds: 0.41911764705882354
+preflop folds: 0.4452054794520548
 ---round 215---
 preflop
-preflop folds: 0.41605839416058393
----round 216---
 preflop
 folded
-preflop folds: 0.42028985507246375
+preflop folds: 0.44594594594594594
+---round 216---
+preflop folds: 0.44594594594594594
 ---round 217---
 preflop
-preflop
-preflop
-preflop folds: 0.41134751773049644
+preflop folds: 0.4429530201342282
 ---round 218---
-preflop folds: 0.41134751773049644
+preflop folds: 0.4429530201342282
 ---round 219---
 preflop
-preflop folds: 0.4084507042253521
+preflop folds: 0.44
 ---round 220---
-preflop folds: 0.4084507042253521
+preflop
+folded
+preflop folds: 0.44370860927152317
 ---round 221---
 preflop
-preflop
-preflop folds: 0.4027777777777778
+preflop folds: 0.4407894736842105
 ---round 222---
-preflop folds: 0.4027777777777778
+preflop folds: 0.4407894736842105
 ---round 223---
 preflop
-preflop folds: 0.4
+preflop folds: 0.43790849673202614
 ---round 224---
-preflop folds: 0.4
+preflop folds: 0.43790849673202614
 ---round 225---
 preflop
 folded
-preflop folds: 0.4041095890410959
+preflop folds: 0.44155844155844154
 ---round 226---
-preflop folds: 0.4041095890410959
+preflop folds: 0.44155844155844154
 ---round 227---
 preflop
 folded
-preflop folds: 0.40816326530612246
+preflop folds: 0.44516129032258067
 ---round 228---
-preflop folds: 0.40816326530612246
+preflop folds: 0.44516129032258067
 ---round 229---
 preflop
-preflop folds: 0.40540540540540543
+preflop folds: 0.4423076923076923
 ---round 230---
-preflop folds: 0.40540540540540543
+preflop folds: 0.4423076923076923
 ---round 231---
 preflop
 folded
-preflop folds: 0.40939597315436244
+preflop folds: 0.445859872611465
 ---round 232---
-preflop folds: 0.40939597315436244
+preflop folds: 0.445859872611465
 ---round 233---
 preflop
-preflop folds: 0.4066666666666667
+preflop
+folded
+preflop folds: 0.44654088050314467
 ---round 234---
-preflop folds: 0.4066666666666667
+preflop folds: 0.44654088050314467
 ---round 235---
 preflop
-preflop folds: 0.40397350993377484
+preflop folds: 0.44375
 ---round 236---
-preflop folds: 0.40397350993377484
+preflop folds: 0.44375
 ---round 237---
 preflop
 folded
-preflop folds: 0.40789473684210525
+preflop folds: 0.4472049689440994
 ---round 238---
-preflop folds: 0.40789473684210525
+preflop folds: 0.4472049689440994
 ---round 239---
 preflop
-preflop folds: 0.40522875816993464
+preflop
+preflop folds: 0.44171779141104295
 ---round 240---
-preflop folds: 0.40522875816993464
+preflop folds: 0.44171779141104295
 ---round 241---
 preflop
-preflop folds: 0.4025974025974026
+folded
+preflop folds: 0.4451219512195122
 ---round 242---
-preflop folds: 0.4025974025974026
+preflop folds: 0.4451219512195122
 ---round 243---
 preflop
-preflop folds: 0.4
+folded
+preflop folds: 0.4484848484848485
 ---round 244---
-preflop folds: 0.4
+preflop folds: 0.4484848484848485
 ---round 245---
 preflop
-folded
-preflop folds: 0.40384615384615385
+preflop folds: 0.4457831325301205
 ---round 246---
-preflop
-preflop
-preflop folds: 0.3987341772151899
+preflop folds: 0.4457831325301205
 ---round 247---
 preflop
-preflop folds: 0.39622641509433965
+preflop folds: 0.4431137724550898
 ---round 248---
-preflop folds: 0.39622641509433965
+preflop folds: 0.4431137724550898
 ---round 249---
 preflop
-folded
-preflop folds: 0.4
+preflop folds: 0.44047619047619047
 ---round 250---
-preflop
-preflop
-preflop folds: 0.3950617283950617
+preflop folds: 0.44047619047619047
 ---round 251---
 preflop
-folded
-preflop folds: 0.3987730061349693
+preflop folds: 0.4378698224852071
 ---round 252---
-preflop folds: 0.3987730061349693
+preflop folds: 0.4378698224852071
 ---round 253---
 preflop
-folded
-preflop folds: 0.4024390243902439
+preflop folds: 0.43529411764705883
 ---round 254---
-preflop folds: 0.4024390243902439
+preflop folds: 0.43529411764705883
 ---round 255---
 preflop
+preflop
 folded
-preflop folds: 0.40606060606060607
+preflop folds: 0.436046511627907
 ---round 256---
-preflop
-preflop
-preflop folds: 0.40119760479041916
+preflop folds: 0.436046511627907
 ---round 257---
 preflop
-preflop
-preflop folds: 0.39644970414201186
+preflop folds: 0.43352601156069365
 ---round 258---
-preflop
-preflop folds: 0.3941176470588235
+preflop folds: 0.43352601156069365
 ---round 259---
 preflop
 preflop
-preflop folds: 0.38953488372093026
+folded
+preflop folds: 0.4342857142857143
 ---round 260---
-preflop folds: 0.38953488372093026
+preflop folds: 0.4342857142857143
 ---round 261---
 preflop
-folded
-preflop folds: 0.3930635838150289
+preflop folds: 0.4318181818181818
 ---round 262---
-preflop folds: 0.3930635838150289
+preflop folds: 0.4318181818181818
 ---round 263---
 preflop
-preflop folds: 0.39080459770114945
+preflop folds: 0.4293785310734463
 ---round 264---
-preflop folds: 0.39080459770114945
+preflop folds: 0.4293785310734463
 ---round 265---
 preflop
-folded
-preflop folds: 0.3942857142857143
+preflop folds: 0.42696629213483145
 ---round 266---
-preflop folds: 0.3942857142857143
+preflop folds: 0.42696629213483145
 ---round 267---
 preflop
-preflop folds: 0.39204545454545453
+folded
+preflop folds: 0.4301675977653631
 ---round 268---
-preflop folds: 0.39204545454545453
+preflop folds: 0.4301675977653631
 ---round 269---
 preflop
-preflop folds: 0.3898305084745763
+preflop folds: 0.42777777777777776
 ---round 270---
-preflop folds: 0.3898305084745763
+preflop folds: 0.42777777777777776
 ---round 271---
 preflop
 folded
-preflop folds: 0.39325842696629215
+preflop folds: 0.430939226519337
 ---round 272---
-preflop folds: 0.39325842696629215
+preflop
+folded
+preflop folds: 0.4340659340659341
 ---round 273---
 preflop
-preflop folds: 0.39106145251396646
+folded
+preflop folds: 0.4371584699453552
 ---round 274---
-preflop folds: 0.39106145251396646
+preflop folds: 0.4371584699453552
 ---round 275---
 preflop
 folded
-preflop folds: 0.39444444444444443
+preflop folds: 0.44021739130434784
 ---round 276---
-preflop folds: 0.39444444444444443
+preflop folds: 0.44021739130434784
 ---round 277---
 preflop
-preflop folds: 0.39226519337016574
+folded
+preflop folds: 0.44324324324324327
 ---round 278---
-preflop folds: 0.39226519337016574
+preflop folds: 0.44324324324324327
 ---round 279---
 preflop
 folded
-preflop folds: 0.3956043956043956
+preflop folds: 0.44623655913978494
 ---round 280---
-preflop folds: 0.3956043956043956
+preflop folds: 0.44623655913978494
 ---round 281---
 preflop
-preflop folds: 0.39344262295081966
+preflop folds: 0.44385026737967914
 ---round 282---
-preflop folds: 0.39344262295081966
+preflop folds: 0.44385026737967914
 ---round 283---
 preflop
-preflop folds: 0.391304347826087
+folded
+preflop folds: 0.44680851063829785
 ---round 284---
-preflop folds: 0.391304347826087
+preflop
+preflop
+folded
+preflop folds: 0.4473684210526316
 ---round 285---
 preflop
-preflop folds: 0.3891891891891892
+preflop folds: 0.44502617801047123
 ---round 286---
-preflop
-preflop folds: 0.3870967741935484
+preflop folds: 0.44502617801047123
 ---round 287---
 preflop
 folded
-preflop folds: 0.39037433155080214
+preflop folds: 0.4479166666666667
 ---round 288---
-preflop folds: 0.39037433155080214
+preflop folds: 0.4479166666666667
 ---round 289---
 preflop
 folded
-preflop folds: 0.39361702127659576
+preflop folds: 0.45077720207253885
 ---round 290---
-preflop folds: 0.39361702127659576
+preflop folds: 0.45077720207253885
 ---round 291---
 preflop
-preflop folds: 0.3915343915343915
+folded
+preflop folds: 0.4536082474226804
 ---round 292---
-preflop folds: 0.3915343915343915
+preflop folds: 0.4536082474226804
 ---round 293---
 preflop
-preflop
-preflop folds: 0.387434554973822
+folded
+preflop folds: 0.4564102564102564
 ---round 294---
-preflop folds: 0.387434554973822
+preflop folds: 0.4564102564102564
 ---round 295---
 preflop
-folded
-preflop folds: 0.390625
+preflop folds: 0.45408163265306123
 ---round 296---
-preflop
-preflop folds: 0.38860103626943004
+preflop folds: 0.45408163265306123
 ---round 297---
 preflop
-preflop folds: 0.3865979381443299
+folded
+preflop folds: 0.45685279187817257
 ---round 298---
-preflop folds: 0.3865979381443299
+preflop folds: 0.45685279187817257
 ---round 299---
 preflop
-preflop folds: 0.38461538461538464
+preflop
+folded
+preflop folds: 0.457286432160804
 ---round 300---
 preflop
 folded
-preflop folds: 0.3877551020408163
+preflop folds: 0.46
 ---round 301---
 preflop
-preflop folds: 0.38578680203045684
+folded
+preflop folds: 0.4626865671641791
 ---round 302---
-preflop folds: 0.38578680203045684
+preflop folds: 0.4626865671641791
 ---round 303---
 preflop
-preflop folds: 0.3838383838383838
+preflop folds: 0.4603960396039604
 ---round 304---
-preflop
-preflop folds: 0.38190954773869346
+preflop folds: 0.4603960396039604
 ---round 305---
 preflop
-preflop folds: 0.38
+preflop
+preflop folds: 0.45588235294117646
 ---round 306---
-preflop folds: 0.38
+preflop folds: 0.45588235294117646
 ---round 307---
 preflop
-preflop
-folded
-preflop folds: 0.3811881188118812
+preflop folds: 0.45365853658536587
 ---round 308---
-preflop folds: 0.3811881188118812
+preflop folds: 0.45365853658536587
 ---round 309---
 preflop
-preflop folds: 0.3793103448275862
+folded
+preflop folds: 0.4563106796116505
 ---round 310---
-preflop folds: 0.3793103448275862
+preflop folds: 0.4563106796116505
 ---round 311---
 preflop
 folded
-preflop folds: 0.38235294117647056
+preflop folds: 0.45893719806763283
 ---round 312---
-preflop folds: 0.38235294117647056
+preflop folds: 0.45893719806763283
 ---round 313---
 preflop
 folded
-preflop folds: 0.3853658536585366
+preflop folds: 0.46153846153846156
 ---round 314---
-preflop folds: 0.3853658536585366
+preflop folds: 0.46153846153846156
 ---round 315---
 preflop
-folded
-preflop folds: 0.3883495145631068
+preflop folds: 0.45933014354066987
 ---round 316---
-preflop folds: 0.3883495145631068
+preflop folds: 0.45933014354066987
 ---round 317---
 preflop
-folded
-preflop folds: 0.391304347826087
+preflop folds: 0.45714285714285713
 ---round 318---
-preflop folds: 0.391304347826087
+preflop folds: 0.45714285714285713
 ---round 319---
 preflop
-preflop folds: 0.3894230769230769
+preflop folds: 0.4549763033175355
 ---round 320---
-preflop folds: 0.3894230769230769
+preflop folds: 0.4549763033175355
 ---round 321---
 preflop
 folded
-preflop folds: 0.3923444976076555
+preflop folds: 0.45754716981132076
 ---round 322---
-preflop
-preflop folds: 0.3904761904761905
+preflop folds: 0.45754716981132076
 ---round 323---
 preflop
-preflop folds: 0.3886255924170616
+preflop folds: 0.45539906103286387
 ---round 324---
-preflop folds: 0.3886255924170616
+preflop folds: 0.45539906103286387
 ---round 325---
 preflop
-preflop folds: 0.3867924528301887
+preflop folds: 0.4532710280373832
 ---round 326---
-preflop folds: 0.3867924528301887
+preflop folds: 0.4532710280373832
 ---round 327---
 preflop
+preflop
 folded
-preflop folds: 0.38967136150234744
+preflop folds: 0.4537037037037037
 ---round 328---
-preflop folds: 0.38967136150234744
+preflop folds: 0.4537037037037037
 ---round 329---
 preflop
-preflop folds: 0.3878504672897196
+folded
+preflop folds: 0.45622119815668205
 ---round 330---
-preflop folds: 0.3878504672897196
+preflop folds: 0.45622119815668205
 ---round 331---
 preflop
-folded
-preflop folds: 0.39069767441860465
+preflop folds: 0.4541284403669725
 ---round 332---
-preflop
-preflop folds: 0.3888888888888889
+preflop folds: 0.4541284403669725
 ---round 333---
 preflop
 folded
-preflop folds: 0.391705069124424
+preflop folds: 0.45662100456621
 ---round 334---
-preflop folds: 0.391705069124424
+preflop folds: 0.45662100456621
 ---round 335---
 preflop
-preflop folds: 0.38990825688073394
+folded
+preflop folds: 0.4590909090909091
 ---round 336---
-preflop folds: 0.38990825688073394
+preflop folds: 0.4590909090909091
 ---round 337---
 preflop
-preflop folds: 0.3881278538812785
+folded
+preflop folds: 0.46153846153846156
 ---round 338---
 preflop
 preflop
-preflop folds: 0.38461538461538464
+preflop
+preflop folds: 0.45535714285714285
 ---round 339---
 preflop
-preflop folds: 0.38288288288288286
+folded
+preflop folds: 0.4577777777777778
 ---round 340---
-preflop folds: 0.38288288288288286
+preflop folds: 0.4577777777777778
 ---round 341---
 preflop
-preflop folds: 0.3811659192825112
+preflop folds: 0.4557522123893805
 ---round 342---
-preflop folds: 0.3811659192825112
+preflop folds: 0.4557522123893805
 ---round 343---
 preflop
 folded
-preflop folds: 0.38392857142857145
+preflop folds: 0.4581497797356828
 ---round 344---
-preflop folds: 0.38392857142857145
+preflop folds: 0.4581497797356828
 ---round 345---
 preflop
-preflop folds: 0.38222222222222224
+preflop
+preflop
+preflop folds: 0.45217391304347826
 ---round 346---
-preflop folds: 0.38222222222222224
+preflop folds: 0.45217391304347826
 ---round 347---
 preflop
 folded
-preflop folds: 0.38495575221238937
+preflop folds: 0.45454545454545453
 ---round 348---
-preflop folds: 0.38495575221238937
+preflop folds: 0.45454545454545453
 ---round 349---
 preflop
-folded
-preflop folds: 0.3876651982378855
+preflop folds: 0.4525862068965517
 ---round 350---
-preflop folds: 0.3876651982378855
+preflop folds: 0.4525862068965517
 ---round 351---
 preflop
-folded
-preflop folds: 0.39035087719298245
+preflop folds: 0.45064377682403434
 ---round 352---
-preflop folds: 0.39035087719298245
+preflop folds: 0.45064377682403434
 ---round 353---
 preflop
-preflop folds: 0.388646288209607
+folded
+preflop folds: 0.452991452991453
 ---round 354---
-preflop folds: 0.388646288209607
+preflop folds: 0.452991452991453
 ---round 355---
 preflop
-preflop folds: 0.3869565217391304
+preflop folds: 0.451063829787234
 ---round 356---
-preflop folds: 0.3869565217391304
+preflop
+folded
+preflop folds: 0.4533898305084746
 ---round 357---
 preflop
-preflop
-preflop
-preflop folds: 0.38197424892703863
+preflop folds: 0.45147679324894513
 ---round 358---
-preflop
-preflop
-folded
-preflop folds: 0.3829787234042553
+preflop folds: 0.45147679324894513
 ---round 359---
 preflop
-preflop folds: 0.3813559322033898
+folded
+preflop folds: 0.453781512605042
 ---round 360---
-preflop folds: 0.3813559322033898
+preflop
+preflop folds: 0.45188284518828453
 ---round 361---
 preflop
-preflop
 folded
-preflop folds: 0.38235294117647056
+preflop folds: 0.45416666666666666
 ---round 362---
-preflop folds: 0.38235294117647056
+preflop folds: 0.45416666666666666
 ---round 363---
 preflop
-preflop folds: 0.3807531380753138
+folded
+preflop folds: 0.45643153526970953
 ---round 364---
-preflop folds: 0.3807531380753138
+preflop folds: 0.45643153526970953
 ---round 365---
 preflop
-preflop folds: 0.37916666666666665
+preflop folds: 0.45454545454545453
 ---round 366---
-preflop folds: 0.37916666666666665
+preflop folds: 0.45454545454545453
 ---round 367---
 preflop
-preflop folds: 0.3775933609958506
+preflop folds: 0.45267489711934156
 ---round 368---
-preflop folds: 0.3775933609958506
+preflop folds: 0.45267489711934156
 ---round 369---
 preflop
-preflop folds: 0.3760330578512397
+preflop
+preflop folds: 0.4489795918367347
 ---round 370---
-preflop folds: 0.3760330578512397
+preflop folds: 0.4489795918367347
 ---round 371---
 preflop
-folded
-preflop folds: 0.3786008230452675
+preflop folds: 0.44715447154471544
 ---round 372---
-preflop folds: 0.3786008230452675
+preflop folds: 0.44715447154471544
 ---round 373---
 preflop
-preflop folds: 0.3770491803278688
+preflop folds: 0.44534412955465585
 ---round 374---
-preflop
-preflop
-folded
-preflop folds: 0.3780487804878049
+preflop folds: 0.44534412955465585
 ---round 375---
 preflop
-folded
-preflop folds: 0.3805668016194332
+preflop folds: 0.4435483870967742
 ---round 376---
-preflop folds: 0.3805668016194332
+preflop
+folded
+preflop folds: 0.4457831325301205
 ---round 377---
 preflop
-preflop folds: 0.3790322580645161
+folded
+preflop folds: 0.448
 ---round 378---
-preflop folds: 0.3790322580645161
+preflop folds: 0.448
 ---round 379---
 preflop
-folded
-preflop folds: 0.3815261044176707
+preflop folds: 0.44621513944223107
 ---round 380---
-preflop folds: 0.3815261044176707
+preflop folds: 0.44621513944223107
 ---round 381---
 preflop
-preflop folds: 0.38
+folded
+preflop folds: 0.44841269841269843
 ---round 382---
-preflop folds: 0.38
+preflop folds: 0.44841269841269843
 ---round 383---
 preflop
 folded
-preflop folds: 0.38247011952191234
+preflop folds: 0.4505928853754941
 ---round 384---
-preflop folds: 0.38247011952191234
+preflop folds: 0.4505928853754941
 ---round 385---
 preflop
 folded
-preflop folds: 0.38492063492063494
+preflop folds: 0.452755905511811
 ---round 386---
-preflop folds: 0.38492063492063494
+preflop folds: 0.452755905511811
 ---round 387---
 preflop
-folded
-preflop folds: 0.38735177865612647
+preflop folds: 0.45098039215686275
 ---round 388---
-preflop folds: 0.38735177865612647
+preflop folds: 0.45098039215686275
 ---round 389---
 preflop
-preflop folds: 0.3858267716535433
+preflop folds: 0.44921875
 ---round 390---
-preflop folds: 0.3858267716535433
+preflop folds: 0.44921875
 ---round 391---
 preflop
-preflop folds: 0.3843137254901961
+folded
+preflop folds: 0.45136186770428016
 ---round 392---
-preflop folds: 0.3843137254901961
+preflop folds: 0.45136186770428016
 ---round 393---
 preflop
-preflop folds: 0.3828125
+preflop folds: 0.4496124031007752
 ---round 394---
-preflop folds: 0.3828125
+preflop folds: 0.4496124031007752
 ---round 395---
 preflop
-folded
-preflop folds: 0.3852140077821012
+preflop folds: 0.44787644787644787
 ---round 396---
-preflop folds: 0.3852140077821012
+preflop folds: 0.44787644787644787
 ---round 397---
 preflop
 folded
-preflop folds: 0.3875968992248062
+preflop folds: 0.45
 ---round 398---
-preflop folds: 0.3875968992248062
+preflop folds: 0.45
 ---round 399---
 preflop
-preflop folds: 0.3861003861003861
+preflop folds: 0.4482758620689655
 ---round 400---
-preflop folds: 0.3861003861003861
+preflop folds: 0.4482758620689655
 ---round 401---
 preflop
-preflop folds: 0.38461538461538464
+folded
+preflop folds: 0.45038167938931295
 ---round 402---
-preflop folds: 0.38461538461538464
+preflop folds: 0.45038167938931295
 ---round 403---
 preflop
-preflop folds: 0.3831417624521073
+folded
+preflop folds: 0.4524714828897338
 ---round 404---
-preflop folds: 0.3831417624521073
+preflop folds: 0.4524714828897338
 ---round 405---
 preflop
-preflop
-preflop folds: 0.38022813688212925
+preflop folds: 0.45075757575757575
 ---round 406---
-preflop folds: 0.38022813688212925
+preflop folds: 0.45075757575757575
 ---round 407---
 preflop
-preflop folds: 0.3787878787878788
+preflop folds: 0.4490566037735849
 ---round 408---
-preflop
-preflop folds: 0.37735849056603776
+preflop folds: 0.4490566037735849
 ---round 409---
 preflop
-preflop folds: 0.37593984962406013
----round 410---
-preflop
 folded
-preflop folds: 0.3782771535580524
+preflop folds: 0.45112781954887216
+---round 410---
+preflop folds: 0.45112781954887216
 ---round 411---
 preflop
-preflop folds: 0.376865671641791
+folded
+preflop folds: 0.45318352059925093
 ---round 412---
-preflop folds: 0.376865671641791
+preflop folds: 0.45318352059925093
 ---round 413---
 preflop
-preflop folds: 0.3754646840148699
----round 414---
-preflop
-preflop
 folded
-preflop folds: 0.3763837638376384
+preflop folds: 0.4552238805970149
+---round 414---
+preflop folds: 0.4552238805970149
 ---round 415---
 preflop
-preflop folds: 0.375
+folded
+preflop folds: 0.45724907063197023
 ---round 416---
-preflop folds: 0.375
+preflop folds: 0.45724907063197023
 ---round 417---
 preflop
-preflop folds: 0.37362637362637363
+folded
+preflop folds: 0.45925925925925926
 ---round 418---
-preflop folds: 0.37362637362637363
+preflop folds: 0.45925925925925926
 ---round 419---
 preflop
-preflop folds: 0.3722627737226277
+folded
+preflop folds: 0.4612546125461255
 ---round 420---
-preflop folds: 0.3722627737226277
+preflop folds: 0.4612546125461255
 ---round 421---
 preflop
-preflop folds: 0.3709090909090909
+preflop folds: 0.45955882352941174
 ---round 422---
-preflop folds: 0.3709090909090909
+preflop folds: 0.45955882352941174
 ---round 423---
 preflop
 folded
-preflop folds: 0.37318840579710144
+preflop folds: 0.46153846153846156
 ---round 424---
-preflop
-folded
-preflop folds: 0.37545126353790614
+preflop folds: 0.46153846153846156
 ---round 425---
 preflop
-folded
-preflop folds: 0.3776978417266187
+preflop folds: 0.45985401459854014
 ---round 426---
-preflop folds: 0.3776978417266187
+preflop folds: 0.45985401459854014
 ---round 427---
 preflop
 folded
-preflop folds: 0.37992831541218636
+preflop folds: 0.4618181818181818
 ---round 428---
-preflop folds: 0.37992831541218636
+preflop folds: 0.4618181818181818
 ---round 429---
 preflop
 folded
-preflop folds: 0.3821428571428571
+preflop folds: 0.463768115942029
 ---round 430---
-preflop folds: 0.3821428571428571
+preflop folds: 0.463768115942029
 ---round 431---
 preflop
-folded
-preflop folds: 0.38434163701067614
+preflop
+preflop folds: 0.460431654676259
 ---round 432---
-preflop folds: 0.38434163701067614
+preflop folds: 0.460431654676259
 ---round 433---
 preflop
 folded
-preflop folds: 0.38652482269503546
+preflop folds: 0.46236559139784944
 ---round 434---
-preflop folds: 0.38652482269503546
+preflop folds: 0.46236559139784944
 ---round 435---
 preflop
-preflop folds: 0.38515901060070673
+folded
+preflop folds: 0.4642857142857143
 ---round 436---
-preflop folds: 0.38515901060070673
+preflop folds: 0.4642857142857143
 ---round 437---
 preflop
-preflop folds: 0.38380281690140844
+preflop folds: 0.4626334519572954
 ---round 438---
-preflop folds: 0.38380281690140844
+preflop folds: 0.4626334519572954
 ---round 439---
 preflop
-folded
-preflop folds: 0.38596491228070173
+preflop folds: 0.46099290780141844
 ---round 440---
-preflop folds: 0.38596491228070173
+preflop
+folded
+preflop folds: 0.4628975265017668
 ---round 441---
 preflop
-folded
-preflop folds: 0.3881118881118881
+preflop folds: 0.4612676056338028
 ---round 442---
-preflop folds: 0.3881118881118881
+preflop folds: 0.4612676056338028
 ---round 443---
 preflop
-folded
-preflop folds: 0.3902439024390244
+preflop folds: 0.45964912280701753
 ---round 444---
-preflop folds: 0.3902439024390244
+preflop folds: 0.45964912280701753
 ---round 445---
 preflop
 folded
-preflop folds: 0.3923611111111111
+preflop folds: 0.46153846153846156
 ---round 446---
-preflop
-folded
-preflop folds: 0.3944636678200692
+preflop folds: 0.46153846153846156
 ---round 447---
 preflop
-preflop folds: 0.3931034482758621
+preflop folds: 0.45993031358885017
 ---round 448---
-preflop folds: 0.3931034482758621
+preflop folds: 0.45993031358885017
 ---round 449---
 preflop
-folded
-preflop folds: 0.3951890034364261
+preflop folds: 0.4583333333333333
 ---round 450---
-preflop folds: 0.3951890034364261
+preflop folds: 0.4583333333333333
 ---round 451---
 preflop
-preflop folds: 0.3938356164383562
+folded
+preflop folds: 0.4602076124567474
 ---round 452---
-preflop folds: 0.3938356164383562
+preflop
+folded
+preflop folds: 0.46206896551724136
 ---round 453---
 preflop
-preflop folds: 0.3924914675767918
+preflop folds: 0.46048109965635736
 ---round 454---
-preflop folds: 0.3924914675767918
+preflop folds: 0.46048109965635736
 ---round 455---
 preflop
-preflop folds: 0.391156462585034
+folded
+preflop folds: 0.4623287671232877
 ---round 456---
-preflop folds: 0.391156462585034
+preflop folds: 0.4623287671232877
 ---round 457---
 preflop
-preflop folds: 0.3898305084745763
+preflop folds: 0.46075085324232085
 ---round 458---
-preflop folds: 0.3898305084745763
+preflop folds: 0.46075085324232085
 ---round 459---
 preflop
-preflop folds: 0.3885135135135135
+folded
+preflop folds: 0.46258503401360546
 ---round 460---
-preflop folds: 0.3885135135135135
+preflop folds: 0.46258503401360546
 ---round 461---
 preflop
 folded
-preflop folds: 0.39057239057239057
+preflop folds: 0.46440677966101696
 ---round 462---
-preflop
-preflop folds: 0.38926174496644295
+preflop folds: 0.46440677966101696
 ---round 463---
 preflop
 folded
-preflop folds: 0.391304347826087
+preflop folds: 0.46621621621621623
 ---round 464---
-preflop folds: 0.391304347826087
+preflop
+preflop folds: 0.46464646464646464
 ---round 465---
 preflop
-preflop folds: 0.39
+preflop folds: 0.46308724832214765
 ---round 466---
-preflop folds: 0.39
+preflop folds: 0.46308724832214765
 ---round 467---
 preflop
-folded
-preflop folds: 0.3920265780730897
+preflop folds: 0.46153846153846156
 ---round 468---
-preflop folds: 0.3920265780730897
+preflop folds: 0.46153846153846156
 ---round 469---
 preflop
-preflop folds: 0.39072847682119205
+folded
+preflop folds: 0.4633333333333333
 ---round 470---
-preflop
-preflop folds: 0.38943894389438943
+preflop folds: 0.4633333333333333
 ---round 471---
 preflop
-folded
-preflop folds: 0.39144736842105265
+preflop folds: 0.46179401993355484
 ---round 472---
-preflop folds: 0.39144736842105265
+preflop folds: 0.46179401993355484
 ---round 473---
 preflop
-preflop folds: 0.3901639344262295
+folded
+preflop folds: 0.46357615894039733
 ---round 474---
-preflop folds: 0.3901639344262295
+preflop folds: 0.46357615894039733
 ---round 475---
 preflop
-preflop folds: 0.3888888888888889
+preflop
+folded
+preflop folds: 0.46381578947368424
 ---round 476---
-preflop folds: 0.3888888888888889
+preflop folds: 0.46381578947368424
 ---round 477---
 preflop
-folded
-preflop folds: 0.39087947882736157
+preflop folds: 0.46229508196721314
 ---round 478---
-preflop folds: 0.39087947882736157
+preflop folds: 0.46229508196721314
 ---round 479---
 preflop
-preflop folds: 0.38961038961038963
+folded
+preflop folds: 0.46405228758169936
 ---round 480---
-preflop folds: 0.38961038961038963
+preflop folds: 0.46405228758169936
 ---round 481---
 preflop
-preflop folds: 0.3883495145631068
----round 482---
 preflop
 folded
-preflop folds: 0.3903225806451613
+preflop folds: 0.4642857142857143
+---round 482---
+preflop folds: 0.4642857142857143
 ---round 483---
 preflop
-preflop
-folded
-preflop folds: 0.391025641025641
+preflop folds: 0.4627831715210356
 ---round 484---
-preflop folds: 0.391025641025641
+preflop folds: 0.4627831715210356
 ---round 485---
 preflop
-preflop
-preflop folds: 0.3885350318471338
+preflop folds: 0.4612903225806452
 ---round 486---
-preflop folds: 0.3885350318471338
+preflop folds: 0.4612903225806452
 ---round 487---
 preflop
-folded
-preflop folds: 0.3904761904761905
+preflop
+preflop folds: 0.4583333333333333
 ---round 488---
-preflop folds: 0.3904761904761905
+preflop folds: 0.4583333333333333
 ---round 489---
 preflop
-folded
-preflop folds: 0.3924050632911392
+preflop folds: 0.45686900958466453
 ---round 490---
-preflop folds: 0.3924050632911392
+preflop folds: 0.45686900958466453
 ---round 491---
 preflop
 folded
-preflop folds: 0.3943217665615142
+preflop folds: 0.4585987261146497
 ---round 492---
-preflop folds: 0.3943217665615142
+preflop folds: 0.4585987261146497
 ---round 493---
 preflop
-preflop folds: 0.39308176100628933
+folded
+preflop folds: 0.4603174603174603
 ---round 494---
-preflop folds: 0.39308176100628933
+preflop
+preflop folds: 0.4588607594936709
 ---round 495---
 preflop
-folded
-preflop folds: 0.3949843260188088
+preflop folds: 0.45741324921135645
 ---round 496---
-preflop
-preflop
-folded
-preflop folds: 0.3956386292834891
+preflop folds: 0.45741324921135645
 ---round 497---
 preflop
+preflop
+preflop
 folded
-preflop folds: 0.39751552795031053
+preflop folds: 0.45625
 ---round 498---
-preflop folds: 0.39751552795031053
+preflop folds: 0.45625
 ---round 499---
 preflop
-preflop folds: 0.39628482972136225
+preflop folds: 0.45482866043613707
 ---round 500---
-preflop folds: 0.39628482972136225
+preflop folds: 0.45482866043613707
 ---round 501---
 preflop
 folded
-preflop folds: 0.39814814814814814
+preflop folds: 0.45652173913043476
 ---round 502---
-preflop folds: 0.39814814814814814
+preflop folds: 0.45652173913043476
 ---round 503---
 preflop
 folded
-preflop folds: 0.4
+preflop folds: 0.4582043343653251
 ---round 504---
-preflop folds: 0.4
+preflop folds: 0.4582043343653251
 ---round 505---
 preflop
-preflop folds: 0.3987730061349693
----round 506---
 preflop
-preflop folds: 0.39755351681957185
+preflop folds: 0.4553846153846154
+---round 506---
+preflop folds: 0.4553846153846154
 ---round 507---
 preflop
-preflop folds: 0.39634146341463417
+folded
+preflop folds: 0.4570552147239264
 ---round 508---
-preflop folds: 0.39634146341463417
+preflop folds: 0.4570552147239264
 ---round 509---
 preflop
-preflop folds: 0.3951367781155015
+folded
+preflop folds: 0.45871559633027525
 ---round 510---
-preflop folds: 0.3951367781155015
+preflop folds: 0.45871559633027525
 ---round 511---
 preflop
-preflop folds: 0.3939393939393939
+folded
+preflop folds: 0.4603658536585366
 ---round 512---
-preflop folds: 0.3939393939393939
+preflop folds: 0.4603658536585366
 ---round 513---
 preflop
-preflop folds: 0.39274924471299094
+folded
+preflop folds: 0.46200607902735563
 ---round 514---
-preflop folds: 0.39274924471299094
+preflop folds: 0.46200607902735563
 ---round 515---
 preflop
-preflop folds: 0.39156626506024095
+folded
+preflop folds: 0.4636363636363636
 ---round 516---
-preflop folds: 0.39156626506024095
+preflop folds: 0.4636363636363636
 ---round 517---
 preflop
-preflop folds: 0.39039039039039036
----round 518---
-preflop
 folded
-preflop folds: 0.39221556886227543
+preflop folds: 0.4652567975830816
+---round 518---
+preflop folds: 0.4652567975830816
 ---round 519---
 preflop
-preflop folds: 0.39104477611940297
+preflop folds: 0.463855421686747
 ---round 520---
-preflop
-preflop folds: 0.3898809523809524
+preflop folds: 0.463855421686747
 ---round 521---
 preflop
-folded
-preflop folds: 0.3916913946587537
+preflop folds: 0.4624624624624625
 ---round 522---
-preflop
-preflop folds: 0.3905325443786982
+preflop folds: 0.4624624624624625
 ---round 523---
 preflop
-preflop folds: 0.3893805309734513
+folded
+preflop folds: 0.46407185628742514
 ---round 524---
-preflop folds: 0.3893805309734513
+preflop folds: 0.46407185628742514
 ---round 525---
 preflop
-preflop folds: 0.38823529411764707
+preflop folds: 0.4626865671641791
 ---round 526---
-preflop folds: 0.38823529411764707
+preflop folds: 0.4626865671641791
 ---round 527---
 preflop
-preflop
-preflop folds: 0.38596491228070173
+folded
+preflop folds: 0.4642857142857143
 ---round 528---
-preflop folds: 0.38596491228070173
+preflop folds: 0.4642857142857143
 ---round 529---
 preflop
 folded
-preflop folds: 0.3877551020408163
+preflop folds: 0.4658753709198813
 ---round 530---
-preflop folds: 0.3877551020408163
+preflop folds: 0.4658753709198813
 ---round 531---
 preflop
-preflop folds: 0.3866279069767442
+preflop folds: 0.46449704142011833
 ---round 532---
-preflop folds: 0.3866279069767442
+preflop folds: 0.46449704142011833
 ---round 533---
 preflop
-preflop folds: 0.3855072463768116
+folded
+preflop folds: 0.46607669616519176
 ---round 534---
-preflop folds: 0.3855072463768116
+preflop folds: 0.46607669616519176
 ---round 535---
 preflop
-folded
-preflop folds: 0.3872832369942196
+preflop folds: 0.4647058823529412
 ---round 536---
-preflop folds: 0.3872832369942196
+preflop folds: 0.4647058823529412
 ---round 537---
 preflop
-preflop folds: 0.3861671469740634
+folded
+preflop folds: 0.4662756598240469
 ---round 538---
-preflop folds: 0.3861671469740634
+preflop
+preflop folds: 0.4649122807017544
 ---round 539---
 preflop
-preflop folds: 0.3850574712643678
+folded
+preflop folds: 0.46647230320699706
 ---round 540---
-preflop folds: 0.3850574712643678
+preflop
+preflop folds: 0.46511627906976744
 ---round 541---
 preflop
-preflop folds: 0.3839541547277937
+preflop folds: 0.463768115942029
 ---round 542---
-preflop
-preflop folds: 0.38285714285714284
+preflop folds: 0.463768115942029
 ---round 543---
 preflop
-preflop
-preflop folds: 0.3806818181818182
+folded
+preflop folds: 0.4653179190751445
 ---round 544---
-preflop folds: 0.3806818181818182
+preflop folds: 0.4653179190751445
 ---round 545---
 preflop
 folded
-preflop folds: 0.38243626062322944
+preflop folds: 0.4668587896253602
 ---round 546---
-preflop folds: 0.38243626062322944
+preflop folds: 0.4668587896253602
 ---round 547---
 preflop
 folded
-preflop folds: 0.384180790960452
+preflop folds: 0.46839080459770116
 ---round 548---
-preflop folds: 0.384180790960452
+preflop
+preflop
+preflop folds: 0.4657142857142857
 ---round 549---
 preflop
-folded
-preflop folds: 0.38591549295774646
+preflop
+preflop folds: 0.4630681818181818
 ---round 550---
-preflop folds: 0.38591549295774646
+preflop folds: 0.4630681818181818
 ---round 551---
 preflop
-preflop folds: 0.3848314606741573
+preflop folds: 0.46175637393767704
 ---round 552---
-preflop folds: 0.3848314606741573
+preflop folds: 0.46175637393767704
 ---round 553---
 preflop
-folded
-preflop folds: 0.3865546218487395
+preflop folds: 0.4604519774011299
 ---round 554---
-preflop
-preflop folds: 0.3854748603351955
+preflop folds: 0.4604519774011299
 ---round 555---
 preflop
 folded
-preflop folds: 0.3871866295264624
+preflop folds: 0.4619718309859155
 ---round 556---
 preflop
-preflop folds: 0.3861111111111111
+preflop folds: 0.4606741573033708
 ---round 557---
 preflop
-folded
-preflop folds: 0.3878116343490305
+preflop folds: 0.45938375350140054
 ---round 558---
-preflop folds: 0.3878116343490305
+preflop folds: 0.45938375350140054
 ---round 559---
 preflop
 folded
-preflop folds: 0.38950276243093923
+preflop folds: 0.46089385474860334
 ---round 560---
-preflop folds: 0.38950276243093923
+preflop folds: 0.46089385474860334
 ---round 561---
 preflop
 folded
-preflop folds: 0.39118457300275483
+preflop folds: 0.4623955431754875
 ---round 562---
-preflop folds: 0.39118457300275483
+preflop folds: 0.4623955431754875
 ---round 563---
 preflop
-folded
-preflop folds: 0.39285714285714285
+preflop folds: 0.46111111111111114
 ---round 564---
-preflop folds: 0.39285714285714285
+preflop folds: 0.46111111111111114
 ---round 565---
 preflop
-preflop folds: 0.3917808219178082
+folded
+preflop folds: 0.4626038781163435
 ---round 566---
-preflop
-preflop folds: 0.3907103825136612
+preflop folds: 0.4626038781163435
 ---round 567---
 preflop
-folded
-preflop folds: 0.3923705722070845
+preflop folds: 0.4613259668508287
 ---round 568---
-preflop folds: 0.3923705722070845
+preflop folds: 0.4613259668508287
 ---round 569---
 preflop
-preflop folds: 0.391304347826087
+preflop folds: 0.46005509641873277
 ---round 570---
-preflop folds: 0.391304347826087
+preflop folds: 0.46005509641873277
 ---round 571---
 preflop
-preflop folds: 0.3902439024390244
----round 572---
-preflop
 folded
-preflop folds: 0.3918918918918919
+preflop folds: 0.46153846153846156
+---round 572---
+preflop folds: 0.46153846153846156
 ---round 573---
 preflop
 folded
-preflop folds: 0.3935309973045822
+preflop folds: 0.46301369863013697
 ---round 574---
-preflop folds: 0.3935309973045822
+preflop folds: 0.46301369863013697
 ---round 575---
 preflop
 folded
-preflop folds: 0.3951612903225806
+preflop folds: 0.4644808743169399
 ---round 576---
-preflop
-preflop
-preflop folds: 0.393048128342246
+preflop folds: 0.4644808743169399
 ---round 577---
 preflop
-preflop folds: 0.392
+folded
+preflop folds: 0.4659400544959128
 ---round 578---
-preflop
-preflop folds: 0.39095744680851063
+preflop folds: 0.4659400544959128
 ---round 579---
 preflop
-preflop folds: 0.38992042440318303
+preflop folds: 0.46467391304347827
 ---round 580---
-preflop folds: 0.38992042440318303
+preflop folds: 0.46467391304347827
 ---round 581---
 preflop
 folded
-preflop folds: 0.3915343915343915
+preflop folds: 0.46612466124661245
 ---round 582---
-preflop folds: 0.3915343915343915
+preflop folds: 0.46612466124661245
 ---round 583---
 preflop
-preflop
 folded
-preflop folds: 0.39210526315789473
+preflop folds: 0.46756756756756757
 ---round 584---
-preflop folds: 0.39210526315789473
+preflop folds: 0.46756756756756757
 ---round 585---
 preflop
-folded
-preflop folds: 0.3937007874015748
+preflop folds: 0.46630727762803237
 ---round 586---
-preflop folds: 0.3937007874015748
+preflop folds: 0.46630727762803237
 ---round 587---
 preflop
 folded
-preflop folds: 0.39528795811518325
+preflop folds: 0.46774193548387094
 ---round 588---
-preflop folds: 0.39528795811518325
+preflop folds: 0.46774193548387094
 ---round 589---
 preflop
-preflop folds: 0.39425587467362927
+preflop folds: 0.46648793565683644
 ---round 590---
-preflop folds: 0.39425587467362927
+preflop folds: 0.46648793565683644
 ---round 591---
 preflop
-preflop folds: 0.3932291666666667
+folded
+preflop folds: 0.4679144385026738
 ---round 592---
-preflop folds: 0.3932291666666667
+preflop folds: 0.4679144385026738
 ---round 593---
 preflop
 folded
-preflop folds: 0.3948051948051948
+preflop folds: 0.4693333333333333
 ---round 594---
-preflop folds: 0.3948051948051948
+preflop folds: 0.4693333333333333
 ---round 595---
 preflop
 folded
-preflop folds: 0.3963730569948187
+preflop folds: 0.47074468085106386
 ---round 596---
-preflop folds: 0.3963730569948187
+preflop folds: 0.47074468085106386
 ---round 597---
 preflop
 folded
-preflop folds: 0.3979328165374677
+preflop folds: 0.47214854111405835
 ---round 598---
-preflop folds: 0.3979328165374677
+preflop folds: 0.47214854111405835
 ---round 599---
 preflop
-preflop folds: 0.39690721649484534
+preflop folds: 0.4708994708994709
 ---round 600---
-preflop folds: 0.39690721649484534
+preflop folds: 0.4708994708994709
 ---round 601---
 preflop
-folded
-preflop folds: 0.39845758354755784
+preflop folds: 0.46965699208443273
 ---round 602---
-preflop folds: 0.39845758354755784
+preflop folds: 0.46965699208443273
 ---round 603---
 preflop
-preflop folds: 0.3974358974358974
----round 604---
-preflop
-preflop folds: 0.39641943734015345
----round 605---
 preflop
 folded
-preflop folds: 0.3979591836734694
+preflop folds: 0.46981627296587924
+---round 604---
+preflop folds: 0.46981627296587924
+---round 605---
+preflop
+preflop folds: 0.468586387434555
 ---round 606---
-preflop folds: 0.3979591836734694
+preflop folds: 0.468586387434555
 ---round 607---
 preflop
 folded
-preflop folds: 0.3994910941475827
+preflop folds: 0.4699738903394256
 ---round 608---
-preflop folds: 0.3994910941475827
+preflop
+folded
+preflop folds: 0.4713541666666667
 ---round 609---
 preflop
-preflop folds: 0.39847715736040606
+preflop
+preflop folds: 0.4689119170984456
 ---round 610---
 preflop
-preflop folds: 0.39746835443037976
+preflop folds: 0.46770025839793283
 ---round 611---
 preflop
-preflop folds: 0.39646464646464646
+preflop folds: 0.46649484536082475
 ---round 612---
-preflop folds: 0.39646464646464646
+preflop folds: 0.46649484536082475
 ---round 613---
 preflop
 folded
-preflop folds: 0.3979848866498741
+preflop folds: 0.46786632390745503
 ---round 614---
-preflop folds: 0.3979848866498741
+preflop folds: 0.46786632390745503
 ---round 615---
 preflop
-preflop folds: 0.3969849246231156
+folded
+preflop folds: 0.46923076923076923
 ---round 616---
-preflop folds: 0.3969849246231156
+preflop folds: 0.46923076923076923
 ---round 617---
 preflop
+preflop
 folded
-preflop folds: 0.39849624060150374
+preflop folds: 0.46938775510204084
 ---round 618---
-preflop folds: 0.39849624060150374
+preflop folds: 0.46938775510204084
 ---round 619---
 preflop
-preflop folds: 0.3975
+preflop folds: 0.4681933842239186
 ---round 620---
-preflop folds: 0.3975
+preflop folds: 0.4681933842239186
 ---round 621---
 preflop
-preflop folds: 0.39650872817955113
+preflop folds: 0.467005076142132
 ---round 622---
-preflop folds: 0.39650872817955113
+preflop folds: 0.467005076142132
 ---round 623---
 preflop
-preflop folds: 0.39552238805970147
+folded
+preflop folds: 0.46835443037974683
 ---round 624---
-preflop folds: 0.39552238805970147
+preflop folds: 0.46835443037974683
 ---round 625---
 preflop
-preflop folds: 0.3945409429280397
+folded
+preflop folds: 0.4696969696969697
 ---round 626---
-preflop folds: 0.3945409429280397
+preflop folds: 0.4696969696969697
 ---round 627---
 preflop
-preflop folds: 0.3935643564356436
+preflop folds: 0.46851385390428213
 ---round 628---
-preflop folds: 0.3935643564356436
+preflop folds: 0.46851385390428213
 ---round 629---
 preflop
-preflop folds: 0.3925925925925926
----round 630---
-preflop
 folded
-preflop folds: 0.39408866995073893
+preflop folds: 0.46984924623115576
+---round 630---
+preflop folds: 0.46984924623115576
 ---round 631---
 preflop
 folded
-preflop folds: 0.3955773955773956
+preflop folds: 0.47117794486215536
 ---round 632---
-preflop folds: 0.3955773955773956
+preflop
+folded
+preflop folds: 0.4725
 ---round 633---
 preflop
-preflop folds: 0.3946078431372549
+preflop folds: 0.4713216957605985
 ---round 634---
-preflop folds: 0.3946078431372549
+preflop folds: 0.4713216957605985
 ---round 635---
 preflop
-folded
-preflop folds: 0.3960880195599022
+preflop folds: 0.4701492537313433
 ---round 636---
-preflop folds: 0.3960880195599022
+preflop folds: 0.4701492537313433
 ---round 637---
 preflop
-preflop
-folded
-preflop folds: 0.39659367396593675
+preflop folds: 0.46898263027295284
 ---round 638---
-preflop folds: 0.39659367396593675
+preflop folds: 0.46898263027295284
 ---round 639---
 preflop
-preflop folds: 0.39563106796116504
+preflop folds: 0.46782178217821785
 ---round 640---
-preflop folds: 0.39563106796116504
+preflop
+preflop folds: 0.4666666666666667
 ---round 641---
 preflop
 folded
-preflop folds: 0.39709443099273606
+preflop folds: 0.46798029556650245
 ---round 642---
-preflop
-folded
-preflop folds: 0.39855072463768115
+preflop folds: 0.46798029556650245
 ---round 643---
 preflop
-preflop folds: 0.39759036144578314
+preflop folds: 0.4668304668304668
 ---round 644---
-preflop folds: 0.39759036144578314
+preflop folds: 0.4668304668304668
 ---round 645---
 preflop
-preflop folds: 0.39663461538461536
+preflop folds: 0.46568627450980393
 ---round 646---
-preflop
-preflop
-preflop folds: 0.39473684210526316
+preflop folds: 0.46568627450980393
 ---round 647---
 preflop
-preflop folds: 0.3937947494033413
+folded
+preflop folds: 0.4669926650366748
 ---round 648---
-preflop folds: 0.3937947494033413
----round 649---
 preflop
-preflop folds: 0.39285714285714285
----round 650---
-preflop folds: 0.39285714285714285
----round 651---
-preflop
-preflop folds: 0.3919239904988123
----round 652---
-preflop folds: 0.3919239904988123
----round 653---
 preflop
 folded
-preflop folds: 0.3933649289099526
+preflop folds: 0.46715328467153283
+---round 649---
+preflop
+folded
+preflop folds: 0.4684466019417476
+---round 650---
+preflop folds: 0.4684466019417476
+---round 651---
+preflop
+folded
+preflop folds: 0.46973365617433416
+---round 652---
+preflop folds: 0.46973365617433416
+---round 653---
+preflop
+preflop folds: 0.46859903381642515
 ---round 654---
-preflop folds: 0.3933649289099526
+preflop folds: 0.46859903381642515
 ---round 655---
 preflop
-preflop folds: 0.39243498817966904
+preflop folds: 0.4674698795180723
 ---round 656---
-preflop folds: 0.39243498817966904
+preflop folds: 0.4674698795180723
 ---round 657---
 preflop
 folded
-preflop folds: 0.3938679245283019
+preflop folds: 0.46875
 ---round 658---
-preflop
-folded
-preflop folds: 0.3952941176470588
+preflop folds: 0.46875
 ---round 659---
 preflop
-preflop folds: 0.39436619718309857
+preflop folds: 0.4676258992805755
 ---round 660---
-preflop
-preflop folds: 0.39344262295081966
+preflop folds: 0.4676258992805755
 ---round 661---
 preflop
-preflop folds: 0.3925233644859813
+preflop folds: 0.4665071770334928
 ---round 662---
-preflop folds: 0.3925233644859813
+preflop folds: 0.4665071770334928
 ---round 663---
 preflop
+preflop
 folded
-preflop folds: 0.3939393939393939
+preflop folds: 0.4666666666666667
 ---round 664---
-preflop folds: 0.3939393939393939
+preflop folds: 0.4666666666666667
 ---round 665---
 preflop
-preflop folds: 0.3930232558139535
+preflop folds: 0.4655581947743468
 ---round 666---
-preflop folds: 0.3930232558139535
+preflop folds: 0.4655581947743468
 ---round 667---
 preflop
-preflop folds: 0.39211136890951276
+preflop folds: 0.46445497630331756
 ---round 668---
-preflop folds: 0.39211136890951276
+preflop folds: 0.46445497630331756
 ---round 669---
 preflop
-preflop folds: 0.3912037037037037
----round 670---
-preflop
 folded
-preflop folds: 0.39260969976905313
+preflop folds: 0.4657210401891253
+---round 670---
+preflop folds: 0.4657210401891253
 ---round 671---
 preflop
-preflop folds: 0.391705069124424
+preflop
+preflop folds: 0.46352941176470586
 ---round 672---
-preflop folds: 0.391705069124424
+preflop folds: 0.46352941176470586
 ---round 673---
 preflop
 folded
-preflop folds: 0.3931034482758621
+preflop folds: 0.4647887323943662
 ---round 674---
-preflop folds: 0.3931034482758621
+preflop folds: 0.4647887323943662
 ---round 675---
 preflop
-folded
-preflop folds: 0.3944954128440367
+preflop folds: 0.4637002341920375
 ---round 676---
-preflop folds: 0.3944954128440367
+preflop folds: 0.4637002341920375
 ---round 677---
 preflop
-preflop folds: 0.39359267734553777
+folded
+preflop folds: 0.4649532710280374
 ---round 678---
 preflop
-preflop folds: 0.3926940639269406
+preflop folds: 0.46386946386946387
 ---round 679---
 preflop
-preflop folds: 0.3917995444191344
+folded
+preflop folds: 0.46511627906976744
 ---round 680---
-preflop folds: 0.3917995444191344
+preflop folds: 0.46511627906976744
 ---round 681---
 preflop
-preflop folds: 0.39090909090909093
+preflop folds: 0.46403712296983757
 ---round 682---
-preflop
-folded
-preflop folds: 0.3922902494331066
+preflop folds: 0.46403712296983757
 ---round 683---
 preflop
-folded
-preflop folds: 0.3936651583710407
----round 684---
 preflop
-preflop folds: 0.3927765237020316
+preflop folds: 0.4618937644341801
+---round 684---
+preflop folds: 0.4618937644341801
 ---round 685---
 preflop
-preflop folds: 0.3918918918918919
+folded
+preflop folds: 0.4631336405529954
 ---round 686---
-preflop folds: 0.3918918918918919
+preflop folds: 0.4631336405529954
 ---round 687---
 preflop
-preflop folds: 0.39101123595505616
+folded
+preflop folds: 0.46436781609195404
 ---round 688---
-preflop folds: 0.39101123595505616
+preflop
+folded
+preflop folds: 0.46559633027522934
 ---round 689---
 preflop
-preflop folds: 0.3901345291479821
+folded
+preflop folds: 0.4668192219679634
 ---round 690---
-preflop
-preflop folds: 0.38926174496644295
+preflop folds: 0.4668192219679634
 ---round 691---
 preflop
-preflop folds: 0.38839285714285715
+preflop folds: 0.4657534246575342
 ---round 692---
-preflop folds: 0.38839285714285715
+preflop folds: 0.4657534246575342
 ---round 693---
 preflop
-preflop folds: 0.38752783964365256
+preflop
+preflop folds: 0.4636363636363636
 ---round 694---
-preflop folds: 0.38752783964365256
+preflop folds: 0.4636363636363636
 ---round 695---
 preflop
-preflop
-preflop folds: 0.3858093126385809
+folded
+preflop folds: 0.46485260770975056
 ---round 696---
-preflop folds: 0.3858093126385809
+preflop
+preflop folds: 0.4638009049773756
 ---round 697---
 preflop
-preflop folds: 0.38495575221238937
+folded
+preflop folds: 0.4650112866817156
 ---round 698---
-preflop folds: 0.38495575221238937
+preflop folds: 0.4650112866817156
 ---round 699---
 preflop
-preflop folds: 0.3841059602649007
+folded
+preflop folds: 0.46621621621621623
 ---round 700---
-preflop folds: 0.3841059602649007
+preflop
+preflop folds: 0.4651685393258427
 ---round 701---
 preflop
-folded
-preflop folds: 0.3854625550660793
+preflop
+preflop
+preflop folds: 0.46205357142857145
 ---round 702---
-preflop folds: 0.3854625550660793
+preflop folds: 0.46205357142857145
 ---round 703---
 preflop
-folded
-preflop folds: 0.3868131868131868
+preflop
+preflop
+preflop folds: 0.458980044345898
 ---round 704---
-preflop folds: 0.3868131868131868
+preflop folds: 0.458980044345898
 ---round 705---
 preflop
 folded
-preflop folds: 0.3881578947368421
+preflop folds: 0.46017699115044247
 ---round 706---
-preflop folds: 0.3881578947368421
+preflop folds: 0.46017699115044247
 ---round 707---
 preflop
-preflop folds: 0.387308533916849
+folded
+preflop folds: 0.4613686534216336
 ---round 708---
-preflop folds: 0.387308533916849
+preflop folds: 0.4613686534216336
 ---round 709---
 preflop
-folded
-preflop folds: 0.388646288209607
+preflop folds: 0.460352422907489
 ---round 710---
-preflop folds: 0.388646288209607
+preflop folds: 0.460352422907489
 ---round 711---
 preflop
-folded
-preflop folds: 0.3899782135076253
+preflop folds: 0.4593406593406593
 ---round 712---
-preflop folds: 0.3899782135076253
+preflop folds: 0.4593406593406593
 ---round 713---
 preflop
-preflop folds: 0.38913043478260867
+folded
+preflop folds: 0.4605263157894737
 ---round 714---
-preflop folds: 0.38913043478260867
+preflop folds: 0.4605263157894737
 ---round 715---
 preflop
 folded
-preflop folds: 0.39045553145336226
+preflop folds: 0.4617067833698031
 ---round 716---
-preflop folds: 0.39045553145336226
+preflop folds: 0.4617067833698031
 ---round 717---
 preflop
-preflop folds: 0.38961038961038963
+folded
+preflop folds: 0.462882096069869
 ---round 718---
-preflop folds: 0.38961038961038963
+preflop folds: 0.462882096069869
 ---round 719---
 preflop
 folded
-preflop folds: 0.39092872570194387
+preflop folds: 0.46405228758169936
 ---round 720---
-preflop folds: 0.39092872570194387
+preflop
+preflop folds: 0.46304347826086956
 ---round 721---
 preflop
-preflop folds: 0.3900862068965517
+folded
+preflop folds: 0.4642082429501085
 ---round 722---
-preflop folds: 0.3900862068965517
+preflop folds: 0.4642082429501085
 ---round 723---
 preflop
-preflop folds: 0.38924731182795697
+folded
+preflop folds: 0.4653679653679654
 ---round 724---
-preflop folds: 0.38924731182795697
+preflop
+preflop
+preflop folds: 0.46336206896551724
 ---round 725---
 preflop
 folded
-preflop folds: 0.3905579399141631
+preflop folds: 0.4645161290322581
 ---round 726---
-preflop folds: 0.3905579399141631
+preflop folds: 0.4645161290322581
 ---round 727---
 preflop
-folded
-preflop folds: 0.39186295503211993
+preflop folds: 0.463519313304721
 ---round 728---
-preflop folds: 0.39186295503211993
+preflop folds: 0.463519313304721
 ---round 729---
 preflop
-folded
-preflop folds: 0.39316239316239315
+preflop folds: 0.4625267665952891
 ---round 730---
-preflop folds: 0.39316239316239315
+preflop folds: 0.4625267665952891
 ---round 731---
 preflop
-preflop folds: 0.39232409381663114
+preflop folds: 0.46153846153846156
 ---round 732---
-preflop folds: 0.39232409381663114
+preflop folds: 0.46153846153846156
 ---round 733---
 preflop
-folded
-preflop folds: 0.39361702127659576
+preflop folds: 0.4605543710021322
 ---round 734---
-preflop folds: 0.39361702127659576
+preflop folds: 0.4605543710021322
 ---round 735---
 preflop
-folded
-preflop folds: 0.39490445859872614
+preflop
+preflop
+preflop folds: 0.4576271186440678
 ---round 736---
-preflop folds: 0.39490445859872614
+preflop folds: 0.4576271186440678
 ---round 737---
 preflop
 folded
-preflop folds: 0.3961864406779661
+preflop folds: 0.4587737843551797
 ---round 738---
-preflop folds: 0.3961864406779661
+preflop folds: 0.4587737843551797
 ---round 739---
 preflop
-preflop folds: 0.3953488372093023
+preflop folds: 0.4578059071729958
 ---round 740---
-preflop folds: 0.3953488372093023
+preflop folds: 0.4578059071729958
 ---round 741---
 preflop
-folded
-preflop folds: 0.39662447257383965
+preflop folds: 0.4568421052631579
 ---round 742---
-preflop folds: 0.39662447257383965
+preflop folds: 0.4568421052631579
 ---round 743---
 preflop
-folded
-preflop folds: 0.39789473684210525
+preflop folds: 0.45588235294117646
 ---round 744---
-preflop folds: 0.39789473684210525
+preflop folds: 0.45588235294117646
 ---round 745---
 preflop
-preflop folds: 0.39705882352941174
+folded
+preflop folds: 0.4570230607966457
 ---round 746---
-preflop folds: 0.39705882352941174
+preflop folds: 0.4570230607966457
 ---round 747---
 preflop
-preflop
-preflop folds: 0.39539748953974896
+folded
+preflop folds: 0.4581589958158996
 ---round 748---
-preflop folds: 0.39539748953974896
+preflop folds: 0.4581589958158996
 ---round 749---
 preflop
-preflop folds: 0.3945720250521921
+folded
+preflop folds: 0.4592901878914405
 ---round 750---
-preflop
-preflop
-preflop folds: 0.39293139293139295
+preflop folds: 0.4592901878914405
 ---round 751---
 preflop
-folded
-preflop folds: 0.3941908713692946
+preflop folds: 0.4583333333333333
 ---round 752---
-preflop folds: 0.3941908713692946
+preflop folds: 0.4583333333333333
 ---round 753---
 preflop
-folded
-preflop folds: 0.39544513457556935
+preflop folds: 0.4573804573804574
 ---round 754---
-preflop folds: 0.39544513457556935
+preflop
+folded
+preflop folds: 0.45850622406639
 ---round 755---
 preflop
-preflop folds: 0.39462809917355374
----round 756---
-preflop
 folded
-preflop folds: 0.3958762886597938
+preflop folds: 0.45962732919254656
+---round 756---
+preflop folds: 0.45962732919254656
 ---round 757---
 preflop
-preflop folds: 0.3950617283950617
+folded
+preflop folds: 0.4607438016528926
 ---round 758---
-preflop folds: 0.3950617283950617
+preflop folds: 0.4607438016528926
 ---round 759---
 preflop
-preflop folds: 0.3942505133470226
+folded
+preflop folds: 0.4618556701030928
 ---round 760---
-preflop folds: 0.3942505133470226
+preflop folds: 0.4618556701030928
 ---round 761---
 preflop
-preflop folds: 0.39344262295081966
+folded
+preflop folds: 0.46296296296296297
 ---round 762---
-preflop folds: 0.39344262295081966
+preflop folds: 0.46296296296296297
 ---round 763---
 preflop
-preflop folds: 0.39263803680981596
+preflop folds: 0.4620123203285421
 ---round 764---
-preflop folds: 0.39263803680981596
+preflop folds: 0.4620123203285421
 ---round 765---
 preflop
-preflop folds: 0.39183673469387753
+preflop folds: 0.4610655737704918
 ---round 766---
-preflop folds: 0.39183673469387753
+preflop
+preflop
+preflop folds: 0.45918367346938777
 ---round 767---
 preflop
-folded
-preflop folds: 0.39307535641547864
+preflop folds: 0.45824847250509165
 ---round 768---
-preflop folds: 0.39307535641547864
+preflop folds: 0.45824847250509165
 ---round 769---
 preflop
-folded
-preflop folds: 0.3943089430894309
+preflop folds: 0.4573170731707317
 ---round 770---
-preflop folds: 0.3943089430894309
+preflop folds: 0.4573170731707317
 ---round 771---
 preflop
-preflop folds: 0.3935091277890467
+preflop folds: 0.4563894523326572
 ---round 772---
-preflop folds: 0.3935091277890467
+preflop
+preflop folds: 0.45546558704453444
 ---round 773---
 preflop
 folded
-preflop folds: 0.39473684210526316
+preflop folds: 0.45656565656565656
 ---round 774---
-preflop folds: 0.39473684210526316
+preflop folds: 0.45656565656565656
 ---round 775---
 preflop
-folded
-preflop folds: 0.39595959595959596
+preflop
+preflop folds: 0.45472837022132795
 ---round 776---
-preflop folds: 0.39595959595959596
+preflop
+preflop
+preflop folds: 0.4529058116232465
 ---round 777---
 preflop
-folded
-preflop folds: 0.3971774193548387
+preflop folds: 0.452
 ---round 778---
-preflop folds: 0.3971774193548387
+preflop folds: 0.452
 ---round 779---
 preflop
-preflop folds: 0.3963782696177062
+preflop folds: 0.45109780439121755
 ---round 780---
-preflop folds: 0.3963782696177062
+preflop folds: 0.45109780439121755
 ---round 781---
 preflop
-preflop folds: 0.39558232931726905
+preflop folds: 0.450199203187251
 ---round 782---
-preflop
-folded
-preflop folds: 0.3967935871743487
+preflop folds: 0.450199203187251
 ---round 783---
 preflop
-folded
-preflop folds: 0.398
+preflop folds: 0.44930417495029823
 ---round 784---
-preflop folds: 0.398
+preflop folds: 0.44930417495029823
 ---round 785---
 preflop
-folded
-preflop folds: 0.3992015968063872
+preflop
+preflop folds: 0.44752475247524753
 ---round 786---
-preflop folds: 0.3992015968063872
+preflop folds: 0.44752475247524753
 ---round 787---
 preflop
-preflop folds: 0.398406374501992
+preflop folds: 0.44664031620553357
 ---round 788---
-preflop
-preflop folds: 0.3976143141153082
+preflop folds: 0.44664031620553357
 ---round 789---
 preflop
-preflop folds: 0.3968253968253968
+folded
+preflop folds: 0.4477317554240631
 ---round 790---
-preflop folds: 0.3968253968253968
+preflop folds: 0.4477317554240631
 ---round 791---
 preflop
 folded
-preflop folds: 0.39801980198019804
+preflop folds: 0.44881889763779526
 ---round 792---
-preflop folds: 0.39801980198019804
+preflop folds: 0.44881889763779526
 ---round 793---
 preflop
-preflop folds: 0.39723320158102765
+folded
+preflop folds: 0.449901768172888
 ---round 794---
-preflop folds: 0.39723320158102765
+preflop folds: 0.449901768172888
 ---round 795---
 preflop
-preflop
-preflop folds: 0.3956692913385827
+folded
+preflop folds: 0.45098039215686275
 ---round 796---
-preflop folds: 0.3956692913385827
+preflop
+folded
+preflop folds: 0.4520547945205479
 ---round 797---
 preflop
-folded
-preflop folds: 0.3968565815324165
+preflop folds: 0.451171875
 ---round 798---
-preflop
-preflop folds: 0.396078431372549
+preflop folds: 0.451171875
 ---round 799---
 preflop
-preflop folds: 0.3953033268101761
+preflop folds: 0.4502923976608187
 ---round 800---
-preflop folds: 0.3953033268101761
+preflop folds: 0.4502923976608187
 ---round 801---
 preflop
-folded
-preflop folds: 0.396484375
+preflop folds: 0.4494163424124514
 ---round 802---
-preflop
-preflop folds: 0.39571150097465885
+preflop folds: 0.4494163424124514
 ---round 803---
 preflop
-preflop
-folded
-preflop folds: 0.39611650485436894
+preflop folds: 0.44854368932038835
 ---round 804---
-preflop folds: 0.39611650485436894
+preflop folds: 0.44854368932038835
 ---round 805---
 preflop
-preflop folds: 0.3953488372093023
+folded
+preflop folds: 0.4496124031007752
 ---round 806---
-preflop folds: 0.3953488372093023
+preflop folds: 0.4496124031007752
 ---round 807---
 preflop
 folded
-preflop folds: 0.3965183752417795
+preflop folds: 0.4506769825918762
 ---round 808---
-preflop folds: 0.3965183752417795
+preflop folds: 0.4506769825918762
 ---round 809---
 preflop
-preflop folds: 0.39575289575289574
+folded
+preflop folds: 0.4517374517374517
 ---round 810---
-preflop folds: 0.39575289575289574
+preflop folds: 0.4517374517374517
 ---round 811---
 preflop
-folded
-preflop folds: 0.3969171483622351
+preflop folds: 0.4508670520231214
 ---round 812---
-preflop folds: 0.3969171483622351
+preflop folds: 0.4508670520231214
 ---round 813---
 preflop
 folded
-preflop folds: 0.39807692307692305
+preflop folds: 0.4519230769230769
 ---round 814---
-preflop folds: 0.39807692307692305
+preflop folds: 0.4519230769230769
 ---round 815---
 preflop
-preflop folds: 0.39731285988483683
+folded
+preflop folds: 0.45297504798464494
 ---round 816---
 preflop
-folded
-preflop folds: 0.39846743295019155
+preflop folds: 0.4521072796934866
 ---round 817---
 preflop
-folded
-preflop folds: 0.39961759082217974
+preflop
+preflop
+preflop folds: 0.44952380952380955
 ---round 818---
-preflop folds: 0.39961759082217974
+preflop folds: 0.44952380952380955
 ---round 819---
 preflop
 folded
-preflop folds: 0.40076335877862596
+preflop folds: 0.4505703422053232
 ---round 820---
-preflop folds: 0.40076335877862596
+preflop folds: 0.4505703422053232
 ---round 821---
 preflop
-preflop folds: 0.4
+folded
+preflop folds: 0.45161290322580644
 ---round 822---
-preflop folds: 0.4
+preflop folds: 0.45161290322580644
 ---round 823---
 preflop
 folded
-preflop folds: 0.4011406844106464
+preflop folds: 0.45265151515151514
 ---round 824---
-preflop folds: 0.4011406844106464
+preflop folds: 0.45265151515151514
 ---round 825---
 preflop
-preflop folds: 0.40037950664136623
+folded
+preflop folds: 0.45368620037807184
 ---round 826---
 preflop
-preflop folds: 0.3996212121212121
+folded
+preflop folds: 0.4547169811320755
 ---round 827---
 preflop
-preflop folds: 0.3988657844990548
+folded
+preflop folds: 0.455743879472693
 ---round 828---
-preflop folds: 0.3988657844990548
+preflop folds: 0.455743879472693
 ---round 829---
 preflop
-folded
-preflop folds: 0.4
+preflop folds: 0.4548872180451128
 ---round 830---
-preflop folds: 0.4
+preflop folds: 0.4548872180451128
 ---round 831---
 preflop
-preflop folds: 0.3992467043314501
+folded
+preflop folds: 0.45590994371482174
 ---round 832---
-preflop folds: 0.3992467043314501
+preflop folds: 0.45590994371482174
 ---round 833---
 preflop
 folded
-preflop folds: 0.40037593984962405
+preflop folds: 0.45692883895131087
 ---round 834---
-preflop folds: 0.40037593984962405
+preflop folds: 0.45692883895131087
 ---round 835---
 preflop
 folded
-preflop folds: 0.40150093808630394
+preflop folds: 0.45794392523364486
 ---round 836---
-preflop
-folded
-preflop folds: 0.40262172284644193
+preflop folds: 0.45794392523364486
 ---round 837---
 preflop
-preflop folds: 0.40186915887850466
+folded
+preflop folds: 0.458955223880597
 ---round 838---
-preflop folds: 0.40186915887850466
+preflop folds: 0.458955223880597
 ---round 839---
 preflop
-preflop folds: 0.40111940298507465
+preflop
+preflop
+preflop folds: 0.45640074211502785
 ---round 840---
-preflop folds: 0.40111940298507465
+preflop folds: 0.45640074211502785
 ---round 841---
 preflop
-folded
-preflop folds: 0.4022346368715084
+preflop
+preflop folds: 0.45471349353049906
 ---round 842---
-preflop folds: 0.4022346368715084
+preflop folds: 0.45471349353049906
 ---round 843---
 preflop
 folded
-preflop folds: 0.4033457249070632
+preflop folds: 0.45571955719557194
 ---round 844---
-preflop
-folded
-preflop folds: 0.4044526901669759
+preflop folds: 0.45571955719557194
 ---round 845---
 preflop
 folded
-preflop folds: 0.40555555555555556
+preflop folds: 0.4567219152854512
 ---round 846---
-preflop folds: 0.40555555555555556
+preflop folds: 0.4567219152854512
 ---round 847---
 preflop
-folded
-preflop folds: 0.4066543438077634
+preflop folds: 0.45588235294117646
 ---round 848---
-preflop folds: 0.4066543438077634
+preflop folds: 0.45588235294117646
 ---round 849---
 preflop
-folded
-preflop folds: 0.4077490774907749
+preflop folds: 0.45504587155963305
 ---round 850---
-preflop folds: 0.4077490774907749
+preflop folds: 0.45504587155963305
 ---round 851---
 preflop
-preflop
-folded
-preflop folds: 0.40808823529411764
+preflop folds: 0.4542124542124542
 ---round 852---
-preflop
-preflop
-folded
-preflop folds: 0.4084249084249084
+preflop folds: 0.4542124542124542
 ---round 853---
 preflop
-preflop folds: 0.4076782449725777
+preflop folds: 0.453382084095064
 ---round 854---
-preflop folds: 0.4076782449725777
+preflop
+folded
+preflop folds: 0.4543795620437956
 ---round 855---
 preflop
-preflop folds: 0.40693430656934304
+folded
+preflop folds: 0.4553734061930783
 ---round 856---
-preflop folds: 0.40693430656934304
+preflop folds: 0.4553734061930783
 ---round 857---
 preflop
 folded
-preflop folds: 0.4080145719489982
+preflop folds: 0.45636363636363636
 ---round 858---
-preflop folds: 0.4080145719489982
+preflop folds: 0.45636363636363636
 ---round 859---
 preflop
-preflop folds: 0.4072727272727273
+folded
+preflop folds: 0.4573502722323049
 ---round 860---
-preflop folds: 0.4072727272727273
+preflop folds: 0.4573502722323049
 ---round 861---
 preflop
-preflop folds: 0.40653357531760437
+preflop folds: 0.45652173913043476
 ---round 862---
-preflop folds: 0.40653357531760437
+preflop folds: 0.45652173913043476
 ---round 863---
 preflop
-preflop folds: 0.4057971014492754
+preflop folds: 0.45569620253164556
 ---round 864---
-preflop folds: 0.4057971014492754
+preflop folds: 0.45569620253164556
 ---round 865---
 preflop
-preflop folds: 0.4050632911392405
+preflop folds: 0.4548736462093863
 ---round 866---
-preflop folds: 0.4050632911392405
+preflop folds: 0.4548736462093863
 ---round 867---
 preflop
-folded
-preflop folds: 0.40613718411552346
+preflop folds: 0.4540540540540541
 ---round 868---
-preflop folds: 0.40613718411552346
+preflop folds: 0.4540540540540541
 ---round 869---
 preflop
-folded
-preflop folds: 0.4072072072072072
+preflop folds: 0.45323741007194246
 ---round 870---
-preflop folds: 0.4072072072072072
+preflop folds: 0.45323741007194246
 ---round 871---
 preflop
-folded
-preflop folds: 0.40827338129496404
+preflop folds: 0.4524236983842011
 ---round 872---
-preflop folds: 0.40827338129496404
+preflop folds: 0.4524236983842011
 ---round 873---
 preflop
-preflop folds: 0.40754039497307004
+folded
+preflop folds: 0.45340501792114696
 ---round 874---
-preflop folds: 0.40754039497307004
+preflop folds: 0.45340501792114696
 ---round 875---
 preflop
-preflop folds: 0.4068100358422939
+preflop folds: 0.4525939177101968
 ---round 876---
-preflop folds: 0.4068100358422939
+preflop folds: 0.4525939177101968
 ---round 877---
 preflop
-folded
-preflop folds: 0.407871198568873
+preflop folds: 0.4517857142857143
 ---round 878---
-preflop folds: 0.407871198568873
+preflop folds: 0.4517857142857143
 ---round 879---
 preflop
-folded
-preflop folds: 0.4089285714285714
+preflop folds: 0.45098039215686275
 ---round 880---
-preflop folds: 0.4089285714285714
+preflop folds: 0.45098039215686275
 ---round 881---
 preflop
 folded
-preflop folds: 0.40998217468805703
+preflop folds: 0.45195729537366547
 ---round 882---
-preflop
-folded
-preflop folds: 0.4110320284697509
+preflop folds: 0.45195729537366547
 ---round 883---
 preflop
 folded
-preflop folds: 0.41207815275310833
+preflop folds: 0.45293072824156305
 ---round 884---
-preflop
-preflop
-preflop folds: 0.41061946902654867
+preflop folds: 0.45293072824156305
 ---round 885---
 preflop
-folded
-preflop folds: 0.411660777385159
+preflop folds: 0.4521276595744681
 ---round 886---
-preflop folds: 0.411660777385159
+preflop folds: 0.4521276595744681
 ---round 887---
 preflop
-folded
-preflop folds: 0.4126984126984127
+preflop folds: 0.45132743362831856
 ---round 888---
-preflop folds: 0.4126984126984127
+preflop folds: 0.45132743362831856
 ---round 889---
 preflop
-folded
-preflop folds: 0.4137323943661972
+preflop folds: 0.450530035335689
 ---round 890---
-preflop folds: 0.4137323943661972
+preflop folds: 0.450530035335689
 ---round 891---
 preflop
-preflop folds: 0.4130052724077329
+preflop folds: 0.4497354497354497
 ---round 892---
-preflop folds: 0.4130052724077329
+preflop folds: 0.4497354497354497
 ---round 893---
 preflop
 folded
-preflop folds: 0.41403508771929826
+preflop folds: 0.4507042253521127
 ---round 894---
-preflop folds: 0.41403508771929826
+preflop folds: 0.4507042253521127
 ---round 895---
 preflop
-preflop folds: 0.4133099824868651
+preflop folds: 0.44991212653778556
 ---round 896---
-preflop
-folded
-preflop folds: 0.4143356643356643
+preflop folds: 0.44991212653778556
 ---round 897---
 preflop
-preflop folds: 0.41361256544502617
+folded
+preflop folds: 0.45087719298245615
 ---round 898---
-preflop folds: 0.41361256544502617
+preflop folds: 0.45087719298245615
 ---round 899---
 preflop
-preflop folds: 0.41289198606271776
+preflop folds: 0.4500875656742557
 ---round 900---
-preflop folds: 0.41289198606271776
+preflop folds: 0.4500875656742557
 ---round 901---
 preflop
-preflop folds: 0.4121739130434783
+folded
+preflop folds: 0.45104895104895104
 ---round 902---
-preflop folds: 0.4121739130434783
+preflop
+preflop folds: 0.450261780104712
 ---round 903---
 preflop
-folded
-preflop folds: 0.4131944444444444
+preflop folds: 0.44947735191637633
 ---round 904---
-preflop folds: 0.4131944444444444
+preflop folds: 0.44947735191637633
 ---round 905---
 preflop
 folded
-preflop folds: 0.41421143847487
+preflop folds: 0.4504347826086956
 ---round 906---
-preflop folds: 0.41421143847487
+preflop folds: 0.4504347826086956
 ---round 907---
 preflop
-preflop folds: 0.4134948096885813
+preflop folds: 0.4496527777777778
 ---round 908---
-preflop folds: 0.4134948096885813
+preflop folds: 0.4496527777777778
 ---round 909---
 preflop
-preflop folds: 0.41278065630397237
+folded
+preflop folds: 0.4506065857885615
 ---round 910---
-preflop folds: 0.41278065630397237
+preflop folds: 0.4506065857885615
 ---round 911---
 preflop
-preflop folds: 0.41206896551724137
+folded
+preflop folds: 0.4515570934256055
 ---round 912---
-preflop folds: 0.41206896551724137
+preflop folds: 0.4515570934256055
 ---round 913---
 preflop
 folded
-preflop folds: 0.41308089500860584
+preflop folds: 0.4525043177892919
 ---round 914---
-preflop folds: 0.41308089500860584
+preflop folds: 0.4525043177892919
 ---round 915---
 preflop
-preflop folds: 0.41237113402061853
+preflop folds: 0.4517241379310345
 ---round 916---
-preflop folds: 0.41237113402061853
+preflop folds: 0.4517241379310345
 ---round 917---
 preflop
-folded
-preflop folds: 0.41337907375643224
+preflop folds: 0.4509466437177281
 ---round 918---
-preflop
-folded
-preflop folds: 0.4143835616438356
+preflop folds: 0.4509466437177281
 ---round 919---
 preflop
-folded
-preflop folds: 0.4153846153846154
+preflop folds: 0.45017182130584193
 ---round 920---
-preflop folds: 0.4153846153846154
+preflop folds: 0.45017182130584193
 ---round 921---
 preflop
-preflop
-preflop
-preflop folds: 0.413265306122449
+folded
+preflop folds: 0.451114922813036
 ---round 922---
-preflop folds: 0.413265306122449
+preflop folds: 0.451114922813036
 ---round 923---
 preflop
-preflop folds: 0.41256366723259763
+folded
+preflop folds: 0.4520547945205479
 ---round 924---
-preflop folds: 0.41256366723259763
+preflop folds: 0.4520547945205479
 ---round 925---
 preflop
-preflop folds: 0.411864406779661
+folded
+preflop folds: 0.452991452991453
 ---round 926---
-preflop folds: 0.411864406779661
+preflop
+folded
+preflop folds: 0.4539249146757679
 ---round 927---
 preflop
-folded
-preflop folds: 0.4128595600676819
+preflop folds: 0.45315161839863716
 ---round 928---
-preflop
-folded
-preflop folds: 0.41385135135135137
+preflop folds: 0.45315161839863716
 ---round 929---
 preflop
-folded
-preflop folds: 0.4148397976391231
+preflop folds: 0.4523809523809524
 ---round 930---
-preflop folds: 0.4148397976391231
+preflop folds: 0.4523809523809524
 ---round 931---
 preflop
-preflop
-folded
-preflop folds: 0.4151260504201681
+preflop folds: 0.45161290322580644
 ---round 932---
-preflop folds: 0.4151260504201681
+preflop folds: 0.45161290322580644
 ---round 933---
 preflop
-preflop folds: 0.41442953020134227
+folded
+preflop folds: 0.45254237288135596
 ---round 934---
-preflop folds: 0.41442953020134227
+preflop folds: 0.45254237288135596
 ---round 935---
 preflop
-folded
-preflop folds: 0.4154103852596315
+preflop folds: 0.4517766497461929
 ---round 936---
-preflop folds: 0.4154103852596315
+preflop folds: 0.4517766497461929
 ---round 937---
 preflop
 folded
-preflop folds: 0.41638795986622074
+preflop folds: 0.4527027027027027
 ---round 938---
-preflop folds: 0.41638795986622074
+preflop
+folded
+preflop folds: 0.4536256323777403
 ---round 939---
 preflop
-preflop folds: 0.41569282136894825
+folded
+preflop folds: 0.45454545454545453
 ---round 940---
-preflop folds: 0.41569282136894825
+preflop folds: 0.45454545454545453
 ---round 941---
 preflop
 folded
-preflop folds: 0.4166666666666667
+preflop folds: 0.45546218487394957
 ---round 942---
-preflop folds: 0.4166666666666667
+preflop folds: 0.45546218487394957
 ---round 943---
 preflop
-preflop folds: 0.415973377703827
+preflop folds: 0.4546979865771812
 ---round 944---
-preflop folds: 0.415973377703827
+preflop folds: 0.4546979865771812
 ---round 945---
 preflop
-folded
-preflop folds: 0.4169435215946844
+preflop folds: 0.4539363484087102
 ---round 946---
-preflop folds: 0.4169435215946844
+preflop folds: 0.4539363484087102
 ---round 947---
 preflop
-preflop folds: 0.41625207296849087
+folded
+preflop folds: 0.45484949832775917
 ---round 948---
-preflop folds: 0.41625207296849087
+preflop folds: 0.45484949832775917
 ---round 949---
 preflop
-preflop folds: 0.4155629139072848
+preflop folds: 0.4540901502504174
 ---round 950---
-preflop folds: 0.4155629139072848
+preflop folds: 0.4540901502504174
 ---round 951---
 preflop
-preflop folds: 0.41487603305785126
+preflop folds: 0.4533333333333333
 ---round 952---
-preflop folds: 0.41487603305785126
+preflop folds: 0.4533333333333333
 ---round 953---
 preflop
+preflop
 folded
-preflop folds: 0.4158415841584158
+preflop folds: 0.45348837209302323
 ---round 954---
-preflop folds: 0.4158415841584158
+preflop folds: 0.45348837209302323
 ---round 955---
 preflop
 folded
-preflop folds: 0.41680395387149916
+preflop folds: 0.45439469320066334
 ---round 956---
-preflop folds: 0.41680395387149916
+preflop folds: 0.45439469320066334
 ---round 957---
 preflop
-preflop folds: 0.4161184210526316
+folded
+preflop folds: 0.4552980132450331
 ---round 958---
-preflop folds: 0.4161184210526316
+preflop folds: 0.4552980132450331
 ---round 959---
 preflop
 folded
-preflop folds: 0.41707717569786534
+preflop folds: 0.456198347107438
 ---round 960---
-preflop folds: 0.41707717569786534
+preflop folds: 0.456198347107438
 ---round 961---
 preflop
-preflop folds: 0.4163934426229508
----round 962---
-preflop
-preflop
 folded
-preflop folds: 0.4166666666666667
+preflop folds: 0.4570957095709571
+---round 962---
+preflop folds: 0.4570957095709571
 ---round 963---
 preflop
 folded
-preflop folds: 0.4176182707993475
+preflop folds: 0.45799011532125206
 ---round 964---
-preflop folds: 0.4176182707993475
+preflop folds: 0.45799011532125206
 ---round 965---
 preflop
-preflop folds: 0.4169381107491857
+preflop folds: 0.45723684210526316
 ---round 966---
-preflop
-preflop folds: 0.416260162601626
+preflop folds: 0.45723684210526316
 ---round 967---
 preflop
-folded
-preflop folds: 0.4172077922077922
+preflop folds: 0.45648604269293924
 ---round 968---
-preflop folds: 0.4172077922077922
+preflop folds: 0.45648604269293924
 ---round 969---
 preflop
-folded
-preflop folds: 0.4181523500810373
+preflop folds: 0.4557377049180328
 ---round 970---
-preflop folds: 0.4181523500810373
+preflop folds: 0.4557377049180328
 ---round 971---
 preflop
-preflop
-preflop
-preflop folds: 0.4161290322580645
+folded
+preflop folds: 0.45662847790507366
 ---round 972---
-preflop folds: 0.4161290322580645
+preflop folds: 0.45662847790507366
 ---round 973---
 preflop
-preflop folds: 0.41545893719806765
+preflop folds: 0.45588235294117646
 ---round 974---
 preflop
-preflop
 folded
-preflop folds: 0.4157303370786517
+preflop folds: 0.4567699836867863
 ---round 975---
 preflop
 folded
-preflop folds: 0.4166666666666667
+preflop folds: 0.4576547231270358
 ---round 976---
-preflop folds: 0.4166666666666667
+preflop folds: 0.4576547231270358
 ---round 977---
 preflop
-preflop folds: 0.416
+folded
+preflop folds: 0.4585365853658537
 ---round 978---
-preflop folds: 0.416
+preflop
+preflop
+folded
+preflop folds: 0.4586709886547812
 ---round 979---
 preflop
 folded
-preflop folds: 0.4169329073482428
+preflop folds: 0.459546925566343
 ---round 980---
-preflop folds: 0.4169329073482428
+preflop folds: 0.459546925566343
 ---round 981---
 preflop
-folded
-preflop folds: 0.4178628389154705
+preflop folds: 0.4588045234248788
 ---round 982---
-preflop
-folded
-preflop folds: 0.41878980891719747
+preflop folds: 0.4588045234248788
 ---round 983---
 preflop
 folded
-preflop folds: 0.41971383147853736
+preflop folds: 0.4596774193548387
 ---round 984---
-preflop folds: 0.41971383147853736
+preflop folds: 0.4596774193548387
 ---round 985---
 preflop
-folded
-preflop folds: 0.42063492063492064
+preflop folds: 0.45893719806763283
 ---round 986---
-preflop folds: 0.42063492063492064
+preflop folds: 0.45893719806763283
 ---round 987---
 preflop
-preflop folds: 0.41996830427892234
+preflop folds: 0.45819935691318325
 ---round 988---
-preflop folds: 0.41996830427892234
+preflop folds: 0.45819935691318325
 ---round 989---
 preflop
 folded
-preflop folds: 0.4208860759493671
+preflop folds: 0.4590690208667737
 ---round 990---
-preflop folds: 0.4208860759493671
+preflop folds: 0.4590690208667737
 ---round 991---
 preflop
 folded
-preflop folds: 0.4218009478672986
+preflop folds: 0.4599358974358974
 ---round 992---
-preflop folds: 0.4218009478672986
+preflop folds: 0.4599358974358974
 ---round 993---
 preflop
 folded
-preflop folds: 0.4227129337539432
+preflop folds: 0.4608
 ---round 994---
-preflop folds: 0.4227129337539432
+preflop folds: 0.4608
 ---round 995---
 preflop
-preflop folds: 0.4220472440944882
+preflop folds: 0.46006389776357826
 ---round 996---
-preflop folds: 0.4220472440944882
----round 997---
-preflop
-preflop folds: 0.42138364779874216
----round 998---
-preflop folds: 0.42138364779874216
----round 999---
 preflop
 folded
-preflop folds: 0.42229199372056514
+preflop folds: 0.4609250398724083
+---round 997---
+preflop
+preflop folds: 0.4601910828025478
+---round 998---
+preflop folds: 0.4601910828025478
+---round 999---
+preflop
+preflop folds: 0.4594594594594595
 ---round 1000---
-preflop folds: 0.42229199372056514
+preflop folds: 0.4594594594594595
