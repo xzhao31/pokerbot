@@ -53,6 +53,7 @@ class Player(Bot):
         self.big_blind = bool(active)  # True if you are the big blind
         print(f'---round {game_state.round_num}---')
         self.folded = False
+        self.opp_preflop_opportunity = True
 
 
     def handle_round_over(self, game_state, terminal_state, active):
@@ -73,14 +74,14 @@ class Player(Bot):
         # my_cards = previous_state.hands[active]  # your cards
         opp_cards = previous_state.hands[1-active]  # opponent's cards or [] if not revealed
         pass
-        if game_state.round_num > 100:
+        if game_state.round_num > 500:
             print(f'proportion preflop folds: {self.folds/self.preflops}')
-        if previous_state.street==0 and (self.big_blind or (not self.big_blind and not self.folded)):
+        if self.opp_preflop_opportunity:
             self.opp_preflops += 1
-            if not opp_cards and not self.folded:
+            print("preflop")
+            if previous_state.street==0 and previous_state.button in [0,1] and not opp_cards and not self.folded:
                 self.opp_folds += 1
-                print("opp folded")
-                print(f'{previous_state=}')
+                print("folded")
 
     
     def preflop_estimate(self, hand, iters):
@@ -201,18 +202,19 @@ class Player(Bot):
         # preflop
         if street == 0:
             # print("---preflop---")
-            self.preflops += 1
+            if round_state.button in [0,1]:
+                self.preflops += 1
             wins = self.preflop_estimate(my_cards, 100)
             cutoff = 0.6
-            if game_state.round_num > 100:
+            if game_state.round_num > 500:
                 print(f'opp fold rate is {self.opp_folds/self.opp_preflops}')
-            # if self.round > 100:
-            #     cutoff = self.opp_folds/self.round - 0.07
             if wins > cutoff:
                 if RaiseAction in legal_actions:
                     return RaiseAction(random.randint(min_raise,min_raise+int(wins*(max_raise-min_raise))))
                 return CallAction()
             else:
+                if round_state.button==0:
+                    self.opp_preflop_opportunity = False
                 self.folds += 1
                 self.folded = True
                 return FoldAction()
