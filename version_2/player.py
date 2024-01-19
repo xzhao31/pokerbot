@@ -142,21 +142,21 @@ class Player(Bot):
         """
         deck = eval7.Deck()
         my_cards = [eval7.Card(card) for card in hand]
-        board_cards = [eval7.Card(card) for card in board]
-        for card in my_cards+board_cards:
+        flipped_cards = [eval7.Card(card) for card in board]
+        for card in my_cards+flipped_cards:
             deck.cards.remove(card)
         wins,losses,ties = 0,0,0
 
         for i in range(iters):
             deck.shuffle()
             unflipped = 5-len(board)
-            board_cards += deck[:unflipped]
+            board_cards = flipped_cards + deck[:unflipped]
             opp_cards = deck[unflipped:unflipped+2] if opp==2 else deck[unflipped:unflipped+3]
             my_val = eval7.evaluate(my_cards+board_cards)
             opp_val = eval7.evaluate(opp_cards+board_cards)
             if my_val > opp_val:
                 wins +=1
-            if my_val < opp_val:
+            elif my_val < opp_val:
                 losses += 1
             else:
                 ties += 1
@@ -207,7 +207,7 @@ class Player(Bot):
                 if game_state.round_num > 300:
                     if self.opp_folds/self.opp_preflops > self.folds/self.preflops:
                         self.cutoff += 0.01
-                    elif self.cutoff > 0.575:
+                    elif self.cutoff > 0.55:
                         self.cutoff -= 0.01
                 if self.p_win < self.cutoff and FoldAction in legal_actions:
                     if round_state.button==0:
@@ -255,6 +255,7 @@ class Player(Bot):
             return FoldAction()
         if RaiseAction in legal_actions and random.random()<0.3:
             raise_amt = int((p_win-p_lose)*effective_stack)
+            print(min_raise, raise_amt, max_raise)
             raise_amt = min(raise_amt,max_raise)
             if raise_amt < min_raise+1:
                 return RaiseAction(min_raise)
