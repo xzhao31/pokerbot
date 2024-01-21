@@ -51,7 +51,7 @@ class Player(Bot):
         # game_clock = game_state.game_clock  # the total number of seconds your bot has left to play this game
         # round_num = game_state.round_num  # the round number from 1 to NUM_ROUNDS
         # my_cards = round_state.hands[active]  # your cards
-        self.big_blind = bool(active)  # True if you are the big blind
+        # self.big_blind = bool(active)  # True if you are the big blind
         print(f'---round {game_state.round_num}---')
         self.folded = False
         self.opp_preflop_opportunity = True
@@ -226,36 +226,30 @@ class Player(Bot):
             else:
                 return CallAction()
 
-        # auction or right after
+        # auction
         elif BidAction in legal_actions:
-            if self.p_win < 0.35:
+            max_bid = opp_stack+1 if my_stack > opp_stack else my_stack
+            if self.p_win < 0.35: # bid 0
                 return BidAction(0)
-            if my_stack > opp_stack:
-                return BidAction(opp_stack+1)
+            elif self.p_win > 0.65: # bid maximum
+                return BidAction(max_bid)
             else:
-                return BidAction(my_stack)
-            # wins3,wins2 = self.auction_estimate(my_cards, board_cards, 100)
-            # auction_val = int(750*(wins3-wins2))
-            # print(f'{auction_val=}')
-            # if my_stack > opp_stack:
-            #     print(f'{opp_stack=}')
-            #     # auction_val = min(auction_val, opp_stack+1)
-            #     auction_val = opp_stack+1
-            # else:
-            #     print(f'{my_stack=}')
-            #     auction_val = min(auction_val, my_stack)
-            # auction_val = max(auction_val,0)
-            # print(f'{auction_val=}')
-            # return BidAction(auction_val)
+                wins3,wins2 = self.auction_estimate(my_cards, board_cards, 100)
+                auction_val = int((0.5+wins3-wins2)*max_bid)
+                auction_val = max(auction_val,0)
+                print(f'{auction_val=}')
+                return BidAction(auction_val)
 
         # normal round
         opp = 2 if my_bid > opp_bid else 3
         p_win,p_lose = self.round_estimate(my_cards,opp,board_cards,150)
         if p_win*opp_contribution - p_lose*(my_contribution+continue_cost) < -1*my_contribution:
+            if CheckAction in legal_actions:
+                return CheckAction()
             return FoldAction()
-        if RaiseAction in legal_actions and (random.random()+p_win)>0.7:
+        if RaiseAction in legal_actions and (random.random()+p_win)>0.75:
             raise_amt = int((p_win-p_lose)*effective_stack)
-            print(min_raise, raise_amt, max_raise)
+            print('normal round', min_raise, raise_amt, max_raise)
             raise_amt = min(raise_amt,max_raise)
             if raise_amt < min_raise+1:
                 return RaiseAction(min_raise)
