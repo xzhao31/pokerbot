@@ -8,7 +8,10 @@ from skeleton.bot import Bot
 from skeleton.runner import parse_args, run_bot
 import random
 import eval7
-
+import numpy as np
+import torch
+from torch import nn
+from torch import optim
 
 class Player(Bot):
     """
@@ -33,6 +36,10 @@ class Player(Bot):
         # opp stats
         self.opp_folds = 0
         self.opp_preflops = 0
+        self.opp_bids = []
+        self.my_pwins = []
+        self.opp_raises = []
+        self.auction_model = nn.Linear(2,1)
 
 
     def handle_new_round(self, game_state, round_state, active):
@@ -72,7 +79,7 @@ class Player(Bot):
         # my_delta = terminal_state.deltas[active]  # your bankroll change from this round
         previous_state = terminal_state.previous_state  # RoundState before payoffs
         # street = previous_state.street  # 0, 3, 4, or 5 representing when this round ended
-        # my_cards = previous_state.hands[active]  # your cards
+        my_cards = previous_state.hands[active]  # your cards
         # opp_cards = previous_state.hands[1-active]  # opponent's cards or [] if not revealed
         pass
         if game_state.round_num == NUM_ROUNDS:
@@ -82,6 +89,13 @@ class Player(Bot):
             self.opp_preflops += 1
             if previous_state.street==0 and previous_state.button in [0,1] and not self.folded:
                 self.opp_folds += 1
+        if terminal_state.bids != [None,None]:
+            self.my_pwins.append(self.p_win)
+            self.opp_bids.append(terminal_state.bids[1-active])
+            self.opp_raises.append(self.get_preflop_raises(previous_state,active))
+        if game_state.round_num == 0.75*NUM_ROUNDS:
+            self.train_auction_model()
+            print(f'{self.auction_model=}')
 
     
     def preflop_estimate(self, hand, iters):
@@ -101,9 +115,16 @@ class Player(Bot):
             opp_cards = deck[5:7]
             if eval7.evaluate(my_cards+board_cards) > eval7.evaluate(opp_cards+board_cards):
                 wins += 1
-
         return wins/iters
     
+
+    def get_preflop_raises(self,game_state,active):
+        curr = game_state
+        while curr.street>0:
+            curr = curr.previous_state
+        return curr.pips[1-active]
+
+
     def auction_estimate(self, hand, flop, iters):
         """
         hand (list): your cards (length 2)
@@ -115,7 +136,7 @@ class Player(Bot):
         flop_cards = [eval7.Card(card) for card in flop]
         for card in my_cards+flop_cards:
             deck.cards.remove(card)
-        wins3,wins2 = 0,0
+        wins,wins3,wins2 = 0,0,0
 
         for i in range(iters):
             deck.shuffle()
@@ -130,8 +151,26 @@ class Player(Bot):
                 wins3 += 1
             if val2 > opp3: # we lose auction
                 wins2 += 1
-        return wins3/iters, wins2/iters
+            if val2 > opp2:
+                wins += 1
+        return wins/iters, wins3/iters, wins2/iters
+    
 
+    def train_auction_model(self):
+        x,y = torch.tensor([self.my_pwins,self.opp_raises]).T, torch.tensor(self.opp_bids)
+        optimizer = optim.SGD(self.auction_model.parameters(), lr=0.01)
+        for epoch in range(10):
+            yhat = self.auction_model(x)
+            loss = self.auction_loss(yhat, y)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            print(f'Epoch {epoch}, Loss: {loss.item()}')
+
+
+    def auction_loss(self,yhat,y):
+        return torch.abs(torch.sub(yhat,y)).sum()
+        
 
     def round_estimate(self, hand, opp, board, iters):
         """
@@ -229,15 +268,15 @@ class Player(Bot):
         # auction
         elif BidAction in legal_actions:
             max_bid = opp_stack+1 if my_stack > opp_stack else my_stack
-            if self.p_win < 0.35: # bid 0
+            self.p_win,wins3,wins2 = self.auction_estimate(my_cards, board_cards, 150)
+            if self.p_win < 0.35:
                 return BidAction(0)
-            elif self.p_win > 0.65: # bid maximum
+            elif self.p_win > 0.65:
                 return BidAction(max_bid)
             else:
-                wins3,wins2 = self.auction_estimate(my_cards, board_cards, 100)
                 auction_val = int((0.5+wins3-wins2)*max_bid)
                 auction_val = max(auction_val,0)
-                print(f'{auction_val=}')
+                print('auction', auction_val, max_bid)
                 return BidAction(auction_val)
 
         # normal round
@@ -247,10 +286,12 @@ class Player(Bot):
             if CheckAction in legal_actions:
                 return CheckAction()
             return FoldAction()
-        if RaiseAction in legal_actions and (random.random()+p_win)>0.75:
+        if RaiseAction in legal_actions and (random.random()+p_win) > 0.8:
             raise_amt = int((p_win-p_lose)*effective_stack)
             print('normal round', min_raise, raise_amt, max_raise)
             raise_amt = min(raise_amt,max_raise)
+            if street < 4:
+                raise_amt = raise_amt//2
             if raise_amt < min_raise+1:
                 return RaiseAction(min_raise)
             else:
