@@ -35,7 +35,8 @@ class Player(Bot):
         self.my_pwins2 = []
         self.my_pwins3 = []
         self.preflop_raises = []
-        self.auction_model = nn.Linear(3,1)
+        self.opp_raises = []
+        self.auction_model = nn.Linear(4,1)
 
 
     def handle_new_round(self, game_state, round_state, active):
@@ -88,7 +89,9 @@ class Player(Bot):
             self.my_pwins2.append(self.p_win2)
             self.my_pwins3.append(self.p_win3)
             self.opp_bids.append(terminal_state.bids[1-active])
-            self.preflop_raises.append(self.get_preflop_raises(previous_state,active))
+            total_raise,opp_raise = self.get_preflop_raises(previous_state,active)
+            self.preflop_raises.append(total_raise)
+            self.opp_raises.append(opp_raise)
         if game_state.round_num == 0.75*NUM_ROUNDS:
             print(f'training auction model, {self.auction_model}')
             self.train_auction_model()
@@ -121,12 +124,19 @@ class Player(Bot):
         game_state (obj): game_state object
         active (int): my player's index
 
-        Returns total amount raised at the latest preflop round
+        Returns (total amount raised preflop, amount raised by opponent)
         """
         curr = game_state
+        opp_raise = 0
         while curr.street>0:
             curr = curr.previous_state
-        return curr.pips[1-active]
+        total_raise = curr.pips[1-active]
+        while curr.previous_state:
+            if curr.pips[1-active] > curr.pips[active]: # they raised
+                opp_raise += curr.pips[1-active]-curr.pips[active]
+            curr = curr.previous_state
+        print(f'total raised {total_raise}, they raised {opp_raise}')
+        return total_raise, opp_raise
 
 
     def auction_estimate(self, hand, flop, iters):
@@ -172,7 +182,7 @@ class Player(Bot):
 
         Returns None
         """
-        x,y = torch.tensor([self.my_pwins2,self.my_pwins3,self.preflop_raises]).T, torch.tensor(self.opp_bids)
+        x,y = torch.tensor([self.my_pwins2,self.my_pwins3,self.preflop_raises,self.opp_raises]).T, torch.tensor(self.opp_bids)
         optimizer = optim.SGD(self.auction_model.parameters(), lr=0.01)
         for epoch in range(10):
             yhat = self.auction_model(x)
@@ -293,13 +303,15 @@ class Player(Bot):
             elif game_state.round_num <= 0.75*NUM_ROUNDS:
                 auction_val = int((0.5+self.p_win3-self.p_win2)*max_bid)
                 auction_val = max(auction_val,0)
+                auction_val = min(auction_val,max_bid)
                 print('auction', auction_val, max_bid)
                 return BidAction(auction_val)
             else:
-                auction_val = self.auction_model(torch.tensor([self.p_win2, self.p_win3,self.get_preflop_raises(round_state,active)])).item()
+                total_raise,opp_raise = self.get_preflop_raises(round_state,active)
+                auction_val = self.auction_model(torch.tensor([self.p_win2,self.p_win3,total_raise,opp_raise])).item()
                 print('auction nn', auction_val)
                 auction_val = max(auction_val,0)
-                auction_val = min(auction_val,my_stack)
+                auction_val = min(auction_val,max_bid)
                 return BidAction(auction_val)
 
         # normal round
