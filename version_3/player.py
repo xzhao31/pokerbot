@@ -95,7 +95,6 @@ class Player(Bot):
             self.opp_raises.append(self.get_preflop_raises(previous_state,active))
         if game_state.round_num == 0.75*NUM_ROUNDS:
             self.train_auction_model()
-            print(f'{self.auction_model=}')
 
     
     def preflop_estimate(self, hand, iters):
