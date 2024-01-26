@@ -1,5 +1,5 @@
 """
-Simple example pokerbot, written in Python.
+team jmoney_14  #swag
 """
 from skeleton.actions import FoldAction, CallAction, CheckAction, RaiseAction, BidAction
 from skeleton.states import GameState, TerminalState, RoundState
@@ -8,7 +8,6 @@ from skeleton.bot import Bot
 from skeleton.runner import parse_args, run_bot
 import random
 import eval7
-import numpy as np
 import torch
 from torch import nn
 from torch import optim
@@ -22,13 +21,9 @@ class Player(Bot):
         """
         Called when a new game starts. Called exactly once.
 
-        Arguments:
-        Nothing.
-
-        Returns:
-        Nothing.
+        Returns None
         """
-        # debugging
+        # my stats
         self.folds = 0
         self.preflops = 0
         self.cutoff = 0.575
@@ -37,22 +32,21 @@ class Player(Bot):
         self.opp_folds = 0
         self.opp_preflops = 0
         self.opp_bids = []
-        self.my_pwins = []
-        self.opp_raises = []
-        self.auction_model = nn.Linear(2,1)
+        self.my_pwins2 = []
+        self.my_pwins3 = []
+        self.preflop_raises = []
+        self.auction_model = nn.Linear(3,1)
 
 
     def handle_new_round(self, game_state, round_state, active):
         """
         Called when a new round starts. Called NUM_ROUNDS times.
 
-        Arguments:
-        game_state: the GameState object.
-        round_state: the RoundState object.
-        active: your player's index.
+        game_state (obj): the GameState object.
+        round_state (obj): the RoundState object.
+        active (int): my player's index
 
-        Returns:
-        Nothing.
+        Returns None
         """
         # my_bankroll = game_state.bankroll  # the total number of chips you've gained or lost from the beginning of the game to the start of this round
         # game_clock = game_state.game_clock  # the total number of seconds your bot has left to play this game
@@ -68,20 +62,19 @@ class Player(Bot):
         """
         Called when a round ends. Called NUM_ROUNDS times.
 
-        Arguments:
-        game_state: the GameState object.
-        terminal_state: the TerminalState object.
-        active: your player's index.
+        game_state (obj): the GameState object.
+        terminal_state (obj): the TerminalState object.
+        active (int): my player's index
 
-        Returns:
-        Nothing.
+        Returns None
         """
         # my_delta = terminal_state.deltas[active]  # your bankroll change from this round
         previous_state = terminal_state.previous_state  # RoundState before payoffs
         # street = previous_state.street  # 0, 3, 4, or 5 representing when this round ended
-        my_cards = previous_state.hands[active]  # your cards
+        # my_cards = previous_state.hands[active]  # your cards
         # opp_cards = previous_state.hands[1-active]  # opponent's cards or [] if not revealed
-        pass
+        
+        # preflop folding stats
         if game_state.round_num == NUM_ROUNDS:
             print(f'proportion preflop folds: {self.folds/self.preflops}')
             print(f'opponents fold rate: {self.opp_folds/self.opp_preflops}')
@@ -89,11 +82,15 @@ class Player(Bot):
             self.opp_preflops += 1
             if previous_state.street==0 and previous_state.button in [0,1] and not self.folded:
                 self.opp_folds += 1
+
+        # auction model
         if terminal_state.bids != [None,None]:
-            self.my_pwins.append(self.p_win)
+            self.my_pwins2.append(self.p_win2)
+            self.my_pwins3.append(self.p_win3)
             self.opp_bids.append(terminal_state.bids[1-active])
-            self.opp_raises.append(self.get_preflop_raises(previous_state,active))
+            self.preflop_raises.append(self.get_preflop_raises(previous_state,active))
         if game_state.round_num == 0.75*NUM_ROUNDS:
+            print(f'training auction model, {self.auction_model}')
             self.train_auction_model()
 
     
@@ -101,6 +98,8 @@ class Player(Bot):
         """
         hand (list): two cards
         iters (int): number of monte carlo iterations
+
+        Returns probability of winning given info so far
         """
         deck = eval7.Deck()
         my_cards = [eval7.Card(card) for card in hand]
@@ -118,6 +117,12 @@ class Player(Bot):
     
 
     def get_preflop_raises(self,game_state,active):
+        """
+        game_state (obj): game_state object
+        active (int): my player's index
+
+        Returns total amount raised at the latest preflop round
+        """
         curr = game_state
         while curr.street>0:
             curr = curr.previous_state
@@ -129,6 +134,12 @@ class Player(Bot):
         hand (list): your cards (length 2)
         flop (list): cards on the board (length 3)
         iters (int): number of monte carlo iterations
+
+        Returns (
+            probability of winning if we tie the auction (same method as preflop_estimate),
+            probability of winning if we win the auction,
+            probability of winning if we lose the auction
+            )
         """
         deck = eval7.Deck()
         my_cards = [eval7.Card(card) for card in hand]
@@ -150,13 +161,18 @@ class Player(Bot):
                 wins3 += 1
             if val2 > opp3: # we lose auction
                 wins2 += 1
-            if val2 > opp2:
+            if val2 > opp2: # as in preflop_estimate, proxy for a tie in the auction (which would be val3 > opp3)
                 wins += 1
         return wins/iters, wins3/iters, wins2/iters
     
 
     def train_auction_model(self):
-        x,y = torch.tensor([self.my_pwins,self.opp_raises]).T, torch.tensor(self.opp_bids)
+        """
+        Trains self.auction_model for use in the rest of the game
+
+        Returns None
+        """
+        x,y = torch.tensor([self.my_pwins2,self.my_pwins3,self.preflop_raises]).T, torch.tensor(self.opp_bids)
         optimizer = optim.SGD(self.auction_model.parameters(), lr=0.01)
         for epoch in range(10):
             yhat = self.auction_model(x)
@@ -177,6 +193,8 @@ class Player(Bot):
         opp (int): number of cards your opponnet has (2 or 3)
         board (list): cards on the board (length 3, 4, or 5)
         iters (int): number of monte carlo iterations
+
+        Return (probability of winning, probability of losing) given the current information
         """
         deck = eval7.Deck()
         my_cards = [eval7.Card(card) for card in hand]
@@ -267,18 +285,18 @@ class Player(Bot):
         # auction
         elif BidAction in legal_actions:
             max_bid = opp_stack+1 if my_stack > opp_stack else my_stack
-            self.p_win,wins3,wins2 = self.auction_estimate(my_cards, board_cards, 150)
+            self.p_win,self.p_win3,self.p_win2 = self.auction_estimate(my_cards, board_cards, 150)
             if self.p_win < 0.35:
                 return BidAction(0)
             elif self.p_win > 0.65:
                 return BidAction(max_bid)
             elif game_state.round_num <= 0.75*NUM_ROUNDS:
-                auction_val = int((0.5+wins3-wins2)*max_bid)
+                auction_val = int((0.5+self.p_win3-self.p_win2)*max_bid)
                 auction_val = max(auction_val,0)
                 print('auction', auction_val, max_bid)
                 return BidAction(auction_val)
             else:
-                auction_val = self.auction_model(torch.tensor([self.p_win,self.get_preflop_raises(round_state,active)])).item()
+                auction_val = self.auction_model(torch.tensor([self.p_win2, self.p_win3,self.get_preflop_raises(round_state,active)])).item()
                 print('auction nn', auction_val)
                 auction_val = max(auction_val,0)
                 auction_val = min(auction_val,my_stack)
