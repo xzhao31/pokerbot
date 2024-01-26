@@ -256,7 +256,7 @@ class Player(Bot):
                     return FoldAction()
             if self.p_win >= self.cutoff and RaiseAction in legal_actions and round_state.button<2:
                 if min_raise == 400:
-                    pass
+                    return FoldAction()
                 else:
                     # print(min_raise,min_raise+int((self.p_win-0.5)*(max_raise-min_raise)),max_raise)
                     return RaiseAction(random.randint(min_raise,min_raise+int((self.p_win-0.4)*(max_raise-min_raise))))
@@ -273,10 +273,16 @@ class Player(Bot):
                 return BidAction(0)
             elif self.p_win > 0.65:
                 return BidAction(max_bid)
-            else:
+            elif game_state.round_num <= 0.75*NUM_ROUNDS:
                 auction_val = int((0.5+wins3-wins2)*max_bid)
                 auction_val = max(auction_val,0)
                 print('auction', auction_val, max_bid)
+                return BidAction(auction_val)
+            else:
+                auction_val = self.auction_model(torch.tensor([self.p_win,self.get_preflop_raises(round_state,active)])).item()
+                print('auction nn', auction_val)
+                auction_val = max(auction_val,0)
+                auction_val = min(auction_val,my_stack)
                 return BidAction(auction_val)
 
         # normal round
