@@ -36,7 +36,12 @@ class Player(Bot):
         self.my_pwins3 = []
         self.preflop_raises = []
         self.opp_raises = []
-        self.auction_model = nn.Linear(4,1)
+        self.auction_model = nn.Sequential(
+            nn.Linear(4,8),
+            nn.ReLU(),
+            nn.Linear(8,1),
+            nn.ReLU()
+        )
 
 
     def handle_new_round(self, game_state, round_state, active):
