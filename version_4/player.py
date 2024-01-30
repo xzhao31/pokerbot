@@ -54,12 +54,7 @@ class Player(Bot):
 
         Returns None
         """
-        # my_bankroll = game_state.bankroll  # the total number of chips you've gained or lost from the beginning of the game to the start of this round
-        # game_clock = game_state.game_clock  # the total number of seconds your bot has left to play this game
-        # round_num = game_state.round_num  # the round number from 1 to NUM_ROUNDS
-        # my_cards = round_state.hands[active]  # your cards
-        # self.big_blind = bool(active)  # True if you are the big blind
-        print(f'---round {game_state.round_num}---')
+        # print(f'---round {game_state.round_num}---')
         self.folded = False
         self.opp_preflop_opportunity = True
 
@@ -74,11 +69,7 @@ class Player(Bot):
 
         Returns None
         """
-        # my_delta = terminal_state.deltas[active]  # your bankroll change from this round
         previous_state = terminal_state.previous_state  # RoundState before payoffs
-        # street = previous_state.street  # 0, 3, 4, or 5 representing when this round ended
-        # my_cards = previous_state.hands[active]  # your cards
-        # opp_cards = previous_state.hands[1-active]  # opponent's cards or [] if not revealed
         
         # preflop folding stats
         if game_state.round_num == NUM_ROUNDS:
@@ -98,7 +89,7 @@ class Player(Bot):
             self.preflop_raises.append(total_raise)
             self.opp_raises.append(opp_raise)
         if game_state.round_num == 0.75*NUM_ROUNDS:
-            print(f'training auction model, {self.auction_model}')
+            # print(f'training auction model, {self.auction_model}')
             self.train_auction_model()
 
     
@@ -140,7 +131,6 @@ class Player(Bot):
             if curr.pips[1-active] > curr.pips[active]: # they raised
                 opp_raise += curr.pips[1-active]-curr.pips[active]
             curr = curr.previous_state
-        print(f'total raised {total_raise}, they raised {opp_raise}')
         return total_raise, opp_raise
 
 
@@ -216,11 +206,11 @@ class Player(Bot):
         flipped_cards = [eval7.Card(card) for card in board]
         for card in my_cards+flipped_cards:
             deck.cards.remove(card)
+        unflipped = 5-len(board)
         wins,losses,ties = 0,0,0
 
         for i in range(iters):
             deck.shuffle()
-            unflipped = 5-len(board)
             board_cards = flipped_cards + deck[:unflipped]
             opp_cards = deck[unflipped:unflipped+2] if opp==2 else deck[unflipped:unflipped+3]
             my_val = eval7.evaluate(my_cards+board_cards)
@@ -248,7 +238,6 @@ class Player(Bot):
         Returns:
         Your action.
         """
-        # May be useful, but you may choose to not use.
         legal_actions = round_state.legal_actions() # the actions you are allowed to take
         street = round_state.street # 0, 3, 4, or 5 representing pre-flop, flop, turn, or river respectively
         my_cards = round_state.hands[active]  # your cards
@@ -266,8 +255,6 @@ class Player(Bot):
 
         if RaiseAction in legal_actions:
             min_raise, max_raise = round_state.raise_bounds() # the smallest and largest numbers of chips for a legal bet/raise
-            min_cost = min_raise - my_pip  # the cost of a minimum bet/raise
-            max_cost = max_raise - my_pip  # the cost of a maximum bet/raise
         
         # preflop
         if street == 0:
@@ -276,7 +263,7 @@ class Player(Bot):
                     self.preflops += 1
                 self.p_win = self.preflop_estimate(my_cards, 150)
                 if game_state.round_num > 200:
-                    if self.opp_folds/self.opp_preflops > self.folds/self.preflops:
+                    if self.opp_folds/self.opp_preflops > self.folds/self.preflops and self.cutoff < 0.9:
                         self.cutoff += 0.01
                     elif self.cutoff > 0.55:
                         self.cutoff -= 0.01
@@ -309,12 +296,12 @@ class Player(Bot):
                 auction_val = int((0.5+self.p_win3-self.p_win2)*max_bid)
                 auction_val = max(auction_val,0)
                 auction_val = min(auction_val,max_bid)
-                print('auction', auction_val, max_bid)
+                # print('auction', auction_val, max_bid)
                 return BidAction(auction_val)
             else:
                 total_raise,opp_raise = self.get_preflop_raises(round_state,active)
-                auction_val = self.auction_model(torch.tensor([self.p_win2,self.p_win3,total_raise,opp_raise])).item()
-                print('auction nn', auction_val)
+                auction_val = int(self.auction_model(torch.tensor([self.p_win2,self.p_win3,total_raise,opp_raise])).item())
+                # print('auction nn', auction_val)
                 auction_val = max(auction_val,0)
                 auction_val = min(auction_val,max_bid)
                 return BidAction(auction_val)
@@ -325,10 +312,11 @@ class Player(Bot):
         if p_win*opp_contribution - p_lose*(my_contribution+continue_cost) < -1*my_contribution:
             if CheckAction in legal_actions:
                 return CheckAction()
-            return FoldAction()
+            elif random.random() < 0.9:
+                return FoldAction()
         if RaiseAction in legal_actions and (random.random()+p_win) > 0.8:
             raise_amt = int((p_win-p_lose)*effective_stack)
-            print('normal round', min_raise, raise_amt, max_raise)
+            # print('normal round', min_raise, raise_amt, max_raise)
             raise_amt = min(raise_amt,max_raise)
             if street < 4:
                 raise_amt = raise_amt//2
